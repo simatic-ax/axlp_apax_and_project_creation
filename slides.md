@@ -1,5 +1,5 @@
 ---
-title: Get started with apax and AX Projects
+title: Get started with Apax and AX Projects
 progress: true
 revealOptions:
   transition: 'fade'
@@ -19,7 +19,7 @@ mouseWheel: true,
 
 <div class="grid-two-col-eq">
   <div class="flex-col justify-center">
-    <p><strong>00 - <a href="#/0">Table of Contents</a></strong></p>
+    <p><strong>00 - <a href="#/0">Prerequisites</a></strong></p>
     <p>01 - <a href="#/1">Introduction to package management</a></p>
     <p>02 - <a href="#/2">Use Apax</a></p>
     <p>03 - <a href="#/3">Building the project</a></p>
@@ -71,7 +71,7 @@ mouseWheel: true,
     <li>with this, you are set up to continue with this learning path</li>
   </div>
 </div>
----
+----
 <div class="grid-slide-container">
   <div class="grid-slide-header">
     <header class="slide_header">
@@ -80,7 +80,7 @@ mouseWheel: true,
     </header>
   </div>
   <div class="grid-slide-text">
-    <p><a href="#/0">00 - Table of Contents</a></p>
+    <p><a href="#/0">00 - Prerequisites</a></p>
     <p><strong><a href="#/1">01 - Introduction to package management</a></strong></p>
     <p><a href="#/2">02 - Use Apax</a></p>
     <p><a href="#/3">03 - Building the project</a></p>
@@ -292,7 +292,7 @@ mouseWheel: true,
     </header>
   </div>
   <div class="grid-slide-text">
-    <p><a href="#/0">00 - Table of Contents</a></p>
+    <p><a href="#/0">00 - Prerequisites</a></p>
     <p><a href="#/1">01 - Introduction to package management</a></p>
     <p><strong><a href="#/2">02 - Use Apax</a></strong></p>
     <p><a href="#/3">03 - Building the project</a></p>
@@ -715,7 +715,7 @@ mouseWheel: true,
     </header>
   </div>
   <div class="grid-slide-text">
-    <p><a href="#/0">00 - Table of Contents</a></p>
+    <p><a href="#/0">00 - Prerequisites</a></p>
     <p><a href="#/1">01 - Introduction to package management</a></p>
     <p><a href="#/2">02 - Use Apax</a></p>
     <p><strong><a href="#/3">03 - Building the project</a></strong></p>
@@ -836,11 +836,7 @@ mouseWheel: true,
   <div class="grid-slide-image" style="background-image: url(./img/getting_started_workflow.svg); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
-
-
-
 ---
-
 <header class="slide_header">
   <h2>
         What did you learn
@@ -860,9 +856,7 @@ mouseWheel: true,
     <p>you can now create your own project and continue with the next section</p>
   </div>
 </div>
-
 ---
-
 <!-- .slide: data-background="rgb(0,0,40)" -->
 <!-- .slide: class="centered has-dark-background" -->
 
