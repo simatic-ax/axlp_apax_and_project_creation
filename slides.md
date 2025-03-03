@@ -19,12 +19,12 @@ mouseWheel: true,
 
 <div class="grid-two-col-eq">
   <div class="flex-col justify-center">
-    <p><strong>00 - Table of Contents</strong></p>
-    <p>01 - Introduction to package management</p>
-    <p>02 - Use Apax</p>
-    <p>03 - Building the project</p>
-    <p>04 - Summary</p>
-    <p>05 - Feedback</p>
+    <p><strong>00 - <a href="#/0">Table of Contents</a></strong></p>
+    <p>01 - <a href="#/1">Introduction to package management</a></p>
+    <p>02 - <a href="#/2">Use Apax</a></p>
+    <p>03 - <a href="#/3">Building the project</a></p>
+    <p>04 - <a href="#/4">Summary</a></p>
+    <p>05 - <a href="#/5">Feedback</a></p>
   </div>
 </div>
 ----
@@ -72,18 +72,20 @@ mouseWheel: true,
   </div>
 </div>
 ---
-<header class="slide_header">
-  <h2>Introduction to package management</h2>
-</header>
-
-<div class="grid-two-col-eq">
-  <div class="flex-col justify-center">
-    <p>00 - Table of Contents</p>
-    <p><strong>01 - Introduction to package management</strong></p>
-    <p>02 - Use Apax</p>
-    <p>03 - Building the project</p>
-    <p>04 - Summary</p>
-    <p>05 - Feedback</p>
+<div class="grid-slide-container">
+  <div class="grid-slide-header">
+    <header class="slide_header">
+      <h2>Introduction to package management</h2>
+      <h3>Overview</h3>
+    </header>
+  </div>
+  <div class="grid-slide-text">
+    <p><a href="#/0">00 - Table of Contents</a></p>
+    <p><strong><a href="#/1">01 - Introduction to package management</a></strong></p>
+    <p><a href="#/2">02 - Use Apax</a></p>
+    <p><a href="#/3">03 - Building the project</a></p>
+    <p><a href="#/4">04 - Summary</a></p>
+    <p><a href="#/5">05 - Feedback</a></p>
   </div>
 </div>
 ----
@@ -282,6 +284,23 @@ mouseWheel: true,
 </div>
 
 ---
+<div class="grid-slide-container">
+  <div class="grid-slide-header">
+    <header class="slide_header">
+      <h2>Use Apax</h2>
+      <h3>Overview</h3>
+    </header>
+  </div>
+  <div class="grid-slide-text">
+    <p><a href="#/0">00 - Table of Contents</a></p>
+    <p><a href="#/1">01 - Introduction to package management</a></p>
+    <p><strong><a href="#/2">02 - Use Apax</a></strong></p>
+    <p><a href="#/3">03 - Building the project</a></p>
+    <p><a href="#/4">04 - Summary</a></p>
+    <p><a href="#/5">05 - Feedback</a></p>
+  </div>
+</div>
+----
 <div class="grid-slide-container">
   <div class="grid-slide-header">
   <header class="slide_header">
@@ -688,6 +707,23 @@ mouseWheel: true,
   </div>
 </div> -->
 ---
+<div class="grid-slide-container">
+  <div class="grid-slide-header">
+    <header class="slide_header">
+      <h2>Building the project</h2>
+      <h3>Overview</h3>
+    </header>
+  </div>
+  <div class="grid-slide-text">
+    <p><a href="#/0">00 - Table of Contents</a></p>
+    <p><a href="#/1">01 - Introduction to package management</a></p>
+    <p><a href="#/2">02 - Use Apax</a></p>
+    <p><strong><a href="#/3">03 - Building the project</a></strong></p>
+    <p><a href="#/4">04 - Summary</a></p>
+    <p><a href="#/5">05 - Feedback</a></p>
+  </div>
+</div>
+----
 <div class="grid-slide-container">
   <div class="grid-slide-header">
   <header class="slide_header">
