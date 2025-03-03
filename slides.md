@@ -88,7 +88,7 @@ mouseWheel: true,
     <p><a href="#/5">05 - Feedback</a></p>
   </div>
 </div>
-----
+---
 <div class="grid-slide-container">
   <div class="grid-slide-header">
   <header class="slide_header">
