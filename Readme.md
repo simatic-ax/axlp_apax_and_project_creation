@@ -1,5 +1,7 @@
 # Get started with Apax and AX Projects
 
+![](./img/title.png)
+
 ## Purpose
 This repository provides a learning path for getting started with Apax and AX Projects. It includes a presentation that covers the basics of package management, using Apax, building projects, and more.
 
@@ -10,7 +12,7 @@ reveal-md slides.md --watch --theme simatic-ax.css -css simatic-ax.css
 ```
 To generate a static version of the presentation for GitHub Pages, use the command:
 ```
-reveal-md slides.md --static docs --theme simatic-ax.css -css simatic-ax.css --assets-dir dist --staticDirs img
+reveal-md slides.md --static docs --theme theme/simatic-ax.css -css theme/simatic-ax.css --assets-dir dist --staticDirs img 
 ```
 The static files will be generated in the `docs` directory, which can be used to host the presentation on GitHub Pages.
 
