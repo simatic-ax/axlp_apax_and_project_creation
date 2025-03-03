@@ -85,7 +85,7 @@ mouseWheel: true,
     <li>key concepts such as dependencies, registries, and packages</li>
   </ul>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apax_overview.svg); background-repeat: no-repeat">
+  <div class="grid-slide-image" style="background-image: url(./img/apax_overview.svg); background-repeat: no-repeat">
   </div>
 </div>
 
@@ -105,7 +105,7 @@ mouseWheel: true,
     <div class="definition"><code>apax</code> automates the process of retrieving and managing project dependencies, making it easier to develop and maintain AX projects.</div>
     <br>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apax_overview.svg); background-repeat: no-repeat">
+  <div class="grid-slide-image" style="background-image: url(./img/apax_overview.svg); background-repeat: no-repeat">
   </div>
 </div>
 
@@ -124,7 +124,7 @@ mouseWheel: true,
   <div class="definition">a package manager simplifies the process of managing software dependencies and ensures that your project has all the necessary components to run correctly.</div>
   <p>common examples of package managers include npm for JavaScript, pip for Python, and apax for AX projects.</p>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apax_overview.svg); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/apax_overview.svg); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 
@@ -149,7 +149,7 @@ mouseWheel: true,
     </ul>
     <p>In the case of <strong>Apax</strong> the name of the configuration file is <code>apax.yml</code></p>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apax_yml.svg); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/apax_yml.svg); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 ----
@@ -171,7 +171,7 @@ mouseWheel: true,
   <p>Packages can be individually updated, which significantly simplifies the process of updating a library.</p>
   <p>The full package name then becomes something like <code>@ax/package-name</code>, helping in organizing and managing packages, especially when dealing with multiple registries.</p>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apax_overview.svg); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/apax_overview.svg); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 ----
@@ -220,7 +220,7 @@ mouseWheel: true,
     </ul>
     <div class="definition">dependencies are like ingredients in a recipe, while devDependencies are like the tools used to prepare the recipe.</div>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apax_overview.svg); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/apax_overview.svg); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 
@@ -239,7 +239,7 @@ mouseWheel: true,
     <li><strong>devDependencies:</strong> these are only needed during the development and testing phases but not for running the project. They are like the tools used to prepare the recipe, such as a mixer. For example, an SDK (Software Development Kit) is a devDependency because it is used to build and test the project but is not needed in the final application</li>
   </ul>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apax_overview.svg); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/apax_overview.svg); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 
@@ -260,7 +260,7 @@ mouseWheel: true,
     <li>a scope is a way to group related packages together, usually defined by a prefix, such as <code>@ax</code> for SIMATIC AX packages</li>
   </ul>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apax_registries.svg); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/apax_registries.svg); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 
@@ -282,7 +282,7 @@ mouseWheel: true,
     <li>install dependencies: <code>apax install</code></li>
   </ul>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/use_apax_overview.svg); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/use_apax_overview.svg); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 
@@ -301,7 +301,7 @@ mouseWheel: true,
   <br>
   <p>this command will display the current version of Apax installed on your system.</p>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apax_version.gif); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/apax_version.gif); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 
@@ -318,7 +318,7 @@ mouseWheel: true,
     <pre><code>apax login</code></pre>
     <p>This command will login for the <code>@ax</code> registry. Once logged in, you will be able to fetch and manage packages from this registry.</p>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apax_login.gif); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/apax_login.gif); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 ----
@@ -336,7 +336,7 @@ mouseWheel: true,
       <li>the advantage is that there are not only fixed project templates; every user can create their own project templates and store them in a registry to make them available</li>
     </ul>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/create_project.gif); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/create_project.gif); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 
@@ -355,7 +355,7 @@ mouseWheel: true,
       <li><strong>lib:</strong> this template is used to create a library project. A library project is intended to be published as a package and can be reused in applications or other libraries</li>
     </ul>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/create_project.gif); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/create_project.gif); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 
@@ -377,7 +377,7 @@ mouseWheel: true,
     </ul>
     <p>These templates can be used to streamline the project creation process and ensure that you have the necessary structure and dependencies in place from the start.</p>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/create_project.gif); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/create_project.gif); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 ----
@@ -400,7 +400,7 @@ mouseWheel: true,
       <li>apax create CLI reference: <br><a href="https://console.simatic-ax.siemens.io/docs/apax/cli#create">https://console.simatic-ax.siemens.io/docs/apax/cli#create</a></li>
     </ol>
 </div>
-  <div class="grid-slide-image" style="background-image: url(../img/create_project.gif); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/create_project.gif); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 ----
@@ -420,7 +420,7 @@ mouseWheel: true,
     </ul>
     <p>This structure helps in organizing your project files and dependencies efficiently.</p>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/ax_project_structure.png); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/ax_project_structure.png); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 
@@ -441,7 +441,7 @@ mouseWheel: true,
     </ol>
     <p>This will download a special package called template and uncompress it into a new folder under the selected directory.</p>
  </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apax_extension.png); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/apax_extension.png); background-repeat: no-repeat; background-size: contain">
     <p>Placeholder for an image showing apax extension</p>
   </div>
   <div class="grid-slide-ressources">
@@ -474,7 +474,7 @@ mouseWheel: true,
       <li>apax.yml manifest reference: <br><a href="https://console.simatic-ax.siemens.io/docs/apax/yml">https://console.simatic-ax.siemens.io/docs/apax/yml</a></li>
     </ol>
 </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 
@@ -503,7 +503,7 @@ mouseWheel: true,
       <li>apax.yml field type: <br><a href="https://console.simatic-ax.siemens.io/docs/apax/yml#type">https://console.simatic-ax.siemens.io/docs/apax/yml#type</a></li>
     </ol>
 </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 
@@ -533,7 +533,7 @@ mouseWheel: true,
       </li>
     </ul>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 ----
@@ -553,7 +553,7 @@ mouseWheel: true,
       <li>this flexibility ensures that you can always use the most suitable tools for your development needs</li>
     </ul>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 
@@ -574,7 +574,7 @@ mouseWheel: true,
     </ul>
     <p>By defining the target, you ensure that the project is compiled and built for the correct platform, whether it's for deployment on a PLC or for running unit tests.</p>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 ----
@@ -600,7 +600,7 @@ mouseWheel: true,
       <li>apax package management: <a href="https://console.simatic-ax.siemens.io/docs/apax/yml#package-management">https://console.simatic-ax.siemens.io/docs/apax/yml#package-management</a></li>
     </ol>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apax_install.gif); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/apax_install.gif); background-repeat: no-repeat; background-size: contain">
   </div>
 
 ----
@@ -624,7 +624,7 @@ mouseWheel: true,
       <li>the <code>apax-lock.json</code> file is updated to lock the version of the added package</li>
     </ul>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apax_add.gif); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/apax_add.gif); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 
@@ -686,7 +686,7 @@ mouseWheel: true,
     <li>where to find the generated binaries</li>
   </ul>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apax_build_overview.svg); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/apax_build_overview.svg); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 ----
@@ -780,7 +780,7 @@ mouseWheel: true,
       <li>Getting Started: <br><a href="https://console.simatic-ax.siemens.io/docs/get-started/guides_overview">https://console.simatic-ax.siemens.io/docs/get-started/guides_overview</a></li>
     </ol>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/getting_started_workflow.svg); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(./img/getting_started_workflow.svg); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 
