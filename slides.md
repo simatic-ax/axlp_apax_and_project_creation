@@ -72,7 +72,7 @@ mouseWheel: true,
     <li>with this, you are set up to continue with this learning path</li>
   </div>
 </div>
-----
+---
 <div class="grid-slide-container">
   <div class="grid-slide-header">
     <header class="slide_header">
@@ -89,7 +89,7 @@ mouseWheel: true,
     <p><a href="#/5">05 - Feedback</a></p>
   </div>
 </div>
----
+----
 <div class="grid-slide-container">
   <div class="grid-slide-header">
   <header class="slide_header">
