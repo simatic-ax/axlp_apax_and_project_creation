@@ -9,7 +9,7 @@ mouseWheel: true,
 <!-- .slide: data-background="rgb(0,0,40)" -->
 <!-- .slide: class="centered has-dark-background" -->
 
-<h1>Hallo2 Learning path SIMATIC AX</h1>
+<h1>Learning path SIMATIC AX</h1>
 <h4>Get started with Apax and AX Projects</h4>
 ----
 
