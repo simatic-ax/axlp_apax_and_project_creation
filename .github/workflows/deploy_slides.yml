@@ -25,7 +25,7 @@ jobs:
       run: npm install -g reveal-md # Install reveal-md globally
     
     - name: Generate slides with reveal-md into the docs folder
-      run: reveal-md slides.md --static docs --theme simatic-ax.css -css simatic-ax.css --assets-dir dist --staticDirs img 
+      run: reveal-md slides.md --static docs --theme theme/simatic-ax.css -css theme/simatic-ax.css --assets-dir dist --staticDirs img 
       # Generate static slides with reveal-md and place them in the docs folder
         
     - name: Upload docs folder as artifact
