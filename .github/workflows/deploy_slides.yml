@@ -18,19 +18,19 @@ jobs:
           node-version: '16'
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Install reveal-md
-        run: npm install -g reveal-md        
-      - name: Generate slides
-        run: reveal-md slides.md --static temp --theme simatic-ax.css -css simatic-ax.css --assets-dir dist --staticDirs img 
-      - name: upload reveal-artifacts
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: temp/ 
+      # - name: Install reveal-md
+      #   run: npm install -g reveal-md        
+      # - name: Generate slides
+        # run: reveal-md slides.md --static temp --theme simatic-ax.css -css simatic-ax.css --assets-dir dist --staticDirs img 
+      # - name: upload reveal-artifacts
+      #   uses: actions/upload-pages-artifact@v3
+      #   with:
+      #     path: temp/ 
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: temp/
+          source: ./
           destination: docs/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
