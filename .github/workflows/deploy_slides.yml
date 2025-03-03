@@ -1,48 +1,45 @@
 name: Build Jekyll site
 on:
  push:
-   branches: ["main"]
+  branches: ["main"] # Trigger the workflow on push to the main branch
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: read # Read access to repository contents
+  pages: write # Write access to GitHub Pages
+  id-token: write # Write access to the ID token
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Install reveal-md
-        run: npm install -g reveal-md        
-      - name: Generate slides
-        run: reveal-md slides.md --static temp --theme simatic-ax.css -css simatic-ax.css --assets-dir dist --staticDirs img 
-      # - name: upload reveal-artifacts
-        # uses: actions/upload-pages-artifact@v3
-        # with:
-        #   path: temp/ 
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: temp/
-          destination: docs/
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs/ 
+   runs-on: ubuntu-latest # Use the latest Ubuntu runner
+   steps:
+    - name: Checkout
+      uses: actions/checkout@v4 # Checkout the repository code
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v3 # Set up Node.js environment
+      with:
+       node-version: '16' # Specify Node.js version 16
+    
+    - name: Setup Pages
+      uses: actions/configure-pages@v5 # Configure GitHub Pages
+    
+    - name: Install reveal-md
+      run: npm install -g reveal-md # Install reveal-md globally
+    
+    - name: Generate slides with reveal-md into the docs folder
+      run: reveal-md slides.md --static docs --theme simatic-ax.css -css simatic-ax.css --assets-dir dist --staticDirs img 
+      # Generate static slides with reveal-md and place them in the docs folder
+        
+    - name: Upload docs folder as artifact
+      uses: actions/upload-pages-artifact@v3 # Upload the docs folder as an artifact
+      with:
+       path: docs/ # Specify the path to the docs folder
 
   deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+   runs-on: ubuntu-latest # Use the latest Ubuntu runner
+   needs: build # Run this job after the build job
+   steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4 # Deploy the site to GitHub Pages
+   environment:
+    name: github-pages # Specify the environment name
+    url: ${{ steps.deployment.outputs.page_url }} # Set the URL of the deployed site
