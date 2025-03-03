@@ -4,22 +4,26 @@ progress: true
 revealOptions:
   transition: 'fade'
 mouseWheel: true,
+
+---
+<!-- .slide: data-background="rgb(0,0,40)" -->
+<!-- .slide: class="centered has-dark-background" -->
+
+<h1>Learning path SIMATIC AX</h1>
+<h4>Get started with Apax and AX Projects</h4>
 ---
 
 # Agenda
 
 |  |  |
 | -- | ----- |
-| 00 | Introduction to the workshop |
-| 01 | Introduction to AX Code IDE |
-| **02** | **Get started with Apax and AX Projects** |
-| 03 | Loading and Debugging |
-| 04 | Introduction to ST Programming |
-| 05 | OOP Elements of ST |
-| 06 | Unit Testing |
-| 07 | Tools for commissioning |
-| 08 | Package management |
-| 09 | Versioning and Continuous Integration |
+| 00 | Prerequisites |
+| 01 | Introduction to package management |
+| 02 | Use Apax |
+| 03 | Building the project |
+| 04 | Summary |
+| 05 | Feedback |
+
 
 ----
 <header class="slide_header">
@@ -803,3 +807,13 @@ mouseWheel: true,
     <p>you can now create your own project and continue with the next section</p>
   </div>
 </div>
+
+---
+
+<!-- .slide: data-background="rgb(0,0,40)" -->
+<!-- .slide: class="centered has-dark-background" -->
+
+<h2>Thanks for using the</h2>
+<h1>SIMATIC AX</h1>
+<h2>learning path</h2>
+<h4><a href="https://github.com/simatic-ax/introduction_apax/issues/new/choose">I want to give feedback</a></h4>
