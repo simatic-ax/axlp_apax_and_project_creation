@@ -11,7 +11,7 @@ mouseWheel: true,
 
 <h1>Learning path SIMATIC AX</h1>
 <h4>Get started with Apax and AX Projects</h4>
----
+----
 
 # Agenda
 
