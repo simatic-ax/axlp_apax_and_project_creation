@@ -5,6 +5,12 @@
 ## Purpose
 This repository provides a learning path for getting started with Apax and AX Projects. It includes a presentation that covers the basics of package management, using Apax, building projects, and more.
 
+## Start the presentation
+
+To start the presentation, please klick on the link below:
+
+[Get started with Apax and AX Projects](https://simatic-ax.github.io/axlp_apax_and_project_creation/#/)
+
 ## Summary of slides.md
 The `slides.md` file contains the content for the presentation. To view the presentation locally, use the command:
 ```
