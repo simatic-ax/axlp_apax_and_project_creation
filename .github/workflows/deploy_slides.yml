@@ -18,8 +18,8 @@ jobs:
           node-version: '16'
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      # - name: Install reveal-md
-      #   run: npm install -g reveal-md        
+      - name: Install reveal-md
+        run: npm install -g reveal-md        
       # - name: Generate slides
         # run: reveal-md slides.md --static temp --theme simatic-ax.css -css simatic-ax.css --assets-dir dist --staticDirs img 
       # - name: upload reveal-artifacts
