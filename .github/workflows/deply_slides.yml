@@ -21,7 +21,8 @@ jobs:
       - name: Install reveal-md
         run: npm install -g reveal-md        
       - name: Generate slides
-        run: reveal-md slides.md --static docs --theme simatic-ax.css -css simatic-ax.css --assets-dir dist --staticDirs img - name: Build
+        run: reveal-md slides.md --static docs --theme simatic-ax.css -css simatic-ax.css --assets-dir dist --staticDirs img 
+      - name: Build
         uses: actions/jekyll-build-pages@v1
         with:
           destination: docs
