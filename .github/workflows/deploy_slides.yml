@@ -21,14 +21,17 @@ jobs:
       - name: Install reveal-md
         run: npm install -g reveal-md        
       - name: Generate slides
-        run: reveal-md slides.md --static docs --theme simatic-ax.css -css simatic-ax.css --assets-dir dist --staticDirs img 
-        # uses: actions/jekyll-build-pages@v1
-        # with:
-        #   destination: docs/
+        run: reveal-md slides.md --static temp --theme simatic-ax.css -css simatic-ax.css --assets-dir dist --staticDirs img 
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: temp/
+          destination: docs/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/
+          path: | 
+            docs/ 
+            temp/
   deploy:
     runs-on: ubuntu-latest
     needs: build
