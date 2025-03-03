@@ -25,14 +25,10 @@ jobs:
         # uses: actions/jekyll-build-pages@v1
         # with:
         #   destination: docs/
-      - name: Build
-        uses: actions/jekyll-build-pages@v1
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          destination: docs
-      # - name: Upload artifact
-      #   uses: actions/upload-pages-artifact@v3
-      #   with:
-      #     path: docs/
+          path: docs/
   deploy:
     runs-on: ubuntu-latest
     needs: build
