@@ -35,8 +35,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          name: new_artifact
-          path: docs/ 
+          path: docs/
 
   deploy:
     runs-on: ubuntu-latest
