@@ -22,7 +22,7 @@ jobs:
         run: npm install -g reveal-md        
       - name: Generate slides
         run: reveal-md slides.md --static temp --theme simatic-ax.css -css simatic-ax.css --assets-dir dist --staticDirs img 
-      - name: upload reveal-artifacts
+      # - name: upload reveal-artifacts
         # uses: actions/upload-pages-artifact@v3
         # with:
         #   path: temp/ 
