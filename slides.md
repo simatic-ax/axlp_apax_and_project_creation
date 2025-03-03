@@ -13,18 +13,20 @@ mouseWheel: true,
 <h4>Get started with Apax and AX Projects</h4>
 ----
 
-# Agenda
+<header class="slide_header">
+  <h2>Table of Contents</h2>
+</header>
 
-|  |  |
-| -- | ----- |
-| 00 | Prerequisites |
-| 01 | Introduction to package management |
-| 02 | Use Apax |
-| 03 | Building the project |
-| 04 | Summary |
-| 05 | Feedback |
-
-
+<div class="grid-two-col-eq">
+  <div class="flex-col justify-center">
+    <p><strong>00 - Table of Contents</strong></p>
+    <p>01 - Introduction to package management</p>
+    <p>02 - Use Apax</p>
+    <p>03 - Building the project</p>
+    <p>04 - Summary</p>
+    <p>05 - Feedback</p>
+  </div>
+</div>
 ----
 <header class="slide_header">
   <h2>
@@ -70,6 +72,21 @@ mouseWheel: true,
   </div>
 </div>
 ---
+<header class="slide_header">
+  <h2>Introduction to package management</h2>
+</header>
+
+<div class="grid-two-col-eq">
+  <div class="flex-col justify-center">
+    <p>00 - Table of Contents</p>
+    <p><strong>01 - Introduction to package management</strong></p>
+    <p>02 - Use Apax</p>
+    <p>03 - Building the project</p>
+    <p>04 - Summary</p>
+    <p>05 - Feedback</p>
+  </div>
+</div>
+----
 <div class="grid-slide-container">
   <div class="grid-slide-header">
   <header class="slide_header">
