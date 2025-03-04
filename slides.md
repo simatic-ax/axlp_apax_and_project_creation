@@ -12,23 +12,61 @@ mouseWheel: true,
 <h2>Learning path</h2>
 <h1>SIMATIC AX</h1>
 <h3>Get started with Apax and AX Projects</h3>
-----
-
+---
+<div class="grid-slide-2x2-container">
+  <div class="grid-slide-header">
+    <header class="slide_header">
+      <h2>0_Introduction to package management</h2>
+      <h3>Overview</h3>
+    </header>
+  </div>
+  <div class="kachel_with_border kachel1">
+    <p>Text in Kachel 1</p>
+  </div>
+  <div class="kachel_with_border kachel2">
+    <img src="img/apax_add.gif" alt="Bild 1" style="width: 100%;">
+  </div>
+  <div class="kachel3">
+    <p>Text in Kachel 3</p>
+  </div>
+  <div class="kachel_with_border kachel4">
+    <img src="img/apax_add.gif" alt="Bild 2" style="width: 100%;">
+  </div>
+</div>
+---
+<div class="grid-slide-3x1-container">
+  <div class="grid-slide-header">
+    <header class="slide_header">
+      <h2>1_Introduction to package management</h2>
+      <h3>Overview</h3>
+    </header>
+  </div>
+  <div class="kachel_with_border kachel1">
+    <p>Text in Kachel 1</p>
+  </div>
+  <div class="kachel_with_border kachel2">
+    <img src="img/apax_add.gif" alt="Bild 1" style="width: 100%;">
+  </div>
+  <div class="kachel_with_border kachel3">
+    <img src="img/apax_add.gif" alt="Bild 2" style="width: 100%;">
+  </div>
+</div>
+---
 <header class="slide_header">
   <h2>Table of Contents</h2>
 </header>
 
 <div class="grid-two-col-eq">
   <div class="flex-col justify-center">
-    <p><strong>00 - <a href="#/0">Prerequisites</a></strong></p>
-    <p>01 - <a href="#/1">Introduction to package management</a></p>
-    <p>02 - <a href="#/2">Use Apax</a></p>
-    <p>03 - <a href="#/3">Building the project</a></p>
-    <p>04 - <a href="#/4">Summary</a></p>
-    <p>05 - <a href="#/5">Feedback</a></p>
+    <p><strong>00 - Prerequisites</strong></p>
+    <p>01 - Introduction to package management</p>
+    <p>02 - Use Apax</p>
+    <p>03 - Building the project</p>
+    <p>04 - Summary</p>
+    <p>05 - Feedback</p>
   </div>
 </div>
-----
+---
 <header class="slide_header">
   <h2>
         What will you learn in this chapter
@@ -53,7 +91,7 @@ mouseWheel: true,
   </div>
 </div>
 
-----
+---
 <header class="slide_header">
   <h2>Prerequisites</h2>
 </header>
@@ -81,16 +119,16 @@ mouseWheel: true,
     </header>
   </div>
   <div class="grid-slide-text">
-    <p><a href="#/0">00 - Prerequisites</a></p>
-    <p><strong><a href="#/1">01 - Introduction to package management</a></strong></p>
-    <p><a href="#/2">02 - Use Apax</a></p>
-    <p><a href="#/3">03 - Building the project</a></p>
-    <p><a href="#/4">04 - Summary</a></p>
-    <p><a href="#/5">05 - Feedback</a></p>
+    <p>00 - Prerequisites</p>
+    <p><strong>01 - Introduction to package management</strong></p>
+    <p>02 - Use Apax</p>
+    <p>03 - Building the project</p>
+    <p>04 - Summary</p>
+    <p>05 - Feedback</p>
   </div>
 </div>
-----
-<div class="grid-slide-container">
+---
+<div class="grid-slide-container2">
   <div class="grid-slide-header">
   <header class="slide_header">
   <h2>Introduction to package management</h2>
@@ -109,7 +147,7 @@ mouseWheel: true,
   </div>
 </div>
 
-----
+---
 
 <div class="grid-slide-container">
     <div class="grid-slide-header">
@@ -129,7 +167,7 @@ mouseWheel: true,
   </div>
 </div>
 
-----
+---
 <div class="grid-slide-container">
   <div class="grid-slide-header">
   <header class="slide_header">
@@ -148,7 +186,7 @@ mouseWheel: true,
   </div>
 </div>
 
-----
+---
 <div class="grid-slide-container">
   <div class="grid-slide-header">
     <header class="slide_header">
@@ -172,7 +210,7 @@ mouseWheel: true,
   <div class="grid-slide-image" style="background-image: url(./img/apax_yml.svg); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
-----
+---
 
 <div class="grid-slide-container">
   <div class="grid-slide-header">
@@ -194,7 +232,7 @@ mouseWheel: true,
   <div class="grid-slide-image" style="background-image: url(./img/apax_overview.svg); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
-----
+---
 <div class="grid-slide-ressources">
   <div class="grid-slide-header">
     <header class="slide_header">
@@ -221,7 +259,7 @@ mouseWheel: true,
     </code></pre>
     </p>
 </div>
-----
+---
 
 <div class="grid-slide-container">
     <div class="grid-slide-header">
@@ -244,7 +282,7 @@ mouseWheel: true,
   </div>
 </div>
 
-----
+---
 
 <div class="grid-slide-container">
   <div class="grid-slide-header">
@@ -263,7 +301,7 @@ mouseWheel: true,
   </div>
 </div>
 
-----
+---
 
 <div class="grid-slide-container">
   <div class="grid-slide-header">
@@ -293,15 +331,15 @@ mouseWheel: true,
     </header>
   </div>
   <div class="grid-slide-text">
-    <p><a href="#/0">00 - Prerequisites</a></p>
-    <p><a href="#/1">01 - Introduction to package management</a></p>
-    <p><strong><a href="#/2">02 - Use Apax</a></strong></p>
-    <p><a href="#/3">03 - Building the project</a></p>
-    <p><a href="#/4">04 - Summary</a></p>
-    <p><a href="#/5">05 - Feedback</a></p>
+    <p>00 - Prerequisites</p>
+    <p>01 - Introduction to package management</p>
+    <p><strong>02 - Use Apax</strong></p>
+    <p>03 - Building the project</p>
+    <p>04 - Summary</p>
+    <p>05 - Feedback</p>
   </div>
 </div>
-----
+---
 <div class="grid-slide-container">
   <div class="grid-slide-header">
   <header class="slide_header">
@@ -323,7 +361,7 @@ mouseWheel: true,
   </div>
 </div>
 
-----
+---
 
 <div class="grid-slide-container">
   <div class="grid-slide-header">
@@ -332,17 +370,39 @@ mouseWheel: true,
     <h3>First use of Apax</h3>
   </header>
   </div>
-  <div class="grid-slide-text">
+  <text class="grid-slide-text">
   <p>To verify that Apax is installed correctly and to check its version, you can use the following command in your terminal:</p>
   <pre><code>apax --version</code></pre>
   <br>
   <p>this command will display the current version of Apax installed on your system.</p>
+  </text>
+  <!-- <ressources class="grid-slide-ressources"> -->
+  <ressources class="grid-slide-ressources">
+    <image class="grid-slide-image">lksdj</image>
+  </ressources>
+  <!-- </ressources> -->
+
+</div>
+---
+<div class="grid-slide-container">
+  <div class="grid-slide-header">´
+    <header class="slide_header">
+    <h2>Use Apax</h2>
+    <h3>First use of Apax</h3>
+  </header>
   </div>
-  <div class="grid-slide-image" style="background-image: url(./img/apax_version.gif); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-text">
+  <p>To verify that Apax is installed correctly and to check its version, you can use the following command in your terminal:</p>
   </div>
+  <!-- <div class="grid-slide-image"><img src="img/apax_add.gif" alt="APAX Add"></div> -->
+<div class="grid-slide-image" style="background-image: url(./img/apax_login.gif); background-repeat: no-repeat; background-size: contain">
+  </div>
+  <!-- <div class="grid-slide-ressources">Irgendeine Ressource</div>
+  <div class="grid-slide-image"><img src="img/apax_yml.svg" alt="APAX YML"></div> -->
 </div>
 
-----
+
+---
 <div class="grid-slide-container">
   <div class="grid-slide-header">
     <header class="slide_header">
@@ -358,7 +418,7 @@ mouseWheel: true,
   <div class="grid-slide-image" style="background-image: url(./img/apax_login.gif); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
-----
+---
 <div class="grid-slide-container">
   <div class="grid-slide-header">
     <header class="slide_header">
@@ -377,7 +437,7 @@ mouseWheel: true,
   </div>
 </div>
 
-----
+---
 <div class="grid-slide-container">
   <div class="grid-slide-header">
     <header class="slide_header">
@@ -396,7 +456,7 @@ mouseWheel: true,
   </div>
 </div>
 
-----
+---
 <div class="grid-slide-container">
   <div class="grid-slide-header">
     <header class="slide_header">
@@ -417,7 +477,7 @@ mouseWheel: true,
   <div class="grid-slide-image" style="background-image: url(./img/create_project.gif); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
-----
+---
 <div class="grid-slide-container">
   <div class="grid-slide-header">
     <header class="slide_header">
@@ -440,7 +500,7 @@ mouseWheel: true,
   <div class="grid-slide-image" style="background-image: url(./img/create_project.gif); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
-----
+---
 <div class="grid-slide-container">
   <div class="grid-slide-header">
     <header class="slide_header">
@@ -461,7 +521,7 @@ mouseWheel: true,
   </div>
 </div>
 
-<!-- ----
+<!-- ---
 <div class="grid-slide-container">
     <div class="grid-slide-header">
     <header class="slide_header">
@@ -488,7 +548,7 @@ mouseWheel: true,
   </div>
 </div> -->
 
-----
+---
 <div class="grid-slide-container">
   <div class="grid-slide-header">
   <header class="slide_header">
@@ -515,7 +575,7 @@ mouseWheel: true,
   </div>
 </div>
 
-----
+---
 
 <div class="grid-slide-container">
   <div class="grid-slide-header">
@@ -544,7 +604,7 @@ mouseWheel: true,
   </div>
 </div>
 
-----
+---
 
 <div class="grid-slide-container">
   <div class="grid-slide-header">
@@ -573,7 +633,7 @@ mouseWheel: true,
   <div class="grid-slide-image" style="background-image: url(./img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
-----
+---
 <div class="grid-slide-container">
   <div class="grid-slide-header">
     <header class="slide_header">
@@ -594,7 +654,7 @@ mouseWheel: true,
   </div>
 </div>
 
-----
+---
 
 <div class="grid-slide-container">
   <div class="grid-slide-header">
@@ -614,7 +674,7 @@ mouseWheel: true,
   <div class="grid-slide-image" style="background-image: url(./img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
-----
+---
 <div class="grid-slide-container">
   <div class="grid-slide-header">
     <header class="slide_header">
@@ -640,7 +700,7 @@ mouseWheel: true,
   <div class="grid-slide-image" style="background-image: url(./img/apax_install.gif); background-repeat: no-repeat; background-size: contain">
   </div>
 
-----
+---
 
 <div class="grid-slide-container">
   <div class="grid-slide-header">
@@ -664,6 +724,8 @@ mouseWheel: true,
   <div class="grid-slide-image" style="background-image: url(./img/apax_add.gif); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
+
+
 
 <!-- ---
 
@@ -714,17 +776,17 @@ mouseWheel: true,
       <h2>Building the project</h2>
       <h3>Overview</h3>
     </header>
-  </div>
-  <div class="grid-slide-text">
-    <p><a href="#/0">00 - Prerequisites</a></p>
-    <p><a href="#/1">01 - Introduction to package management</a></p>
-    <p><a href="#/2">02 - Use Apax</a></p>
-    <p><strong><a href="#/3">03 - Building the project</a></strong></p>
-    <p><a href="#/4">04 - Summary</a></p>
-    <p><a href="#/5">05 - Feedback</a></p>
-  </div>
+    </div>
+    <div class="grid-slide-text">
+    <p>00 - Prerequisites</p>
+    <p>01 - Introduction to package management</p>
+    <p>02 - Use Apax</p>
+    <p><strong>03 - Building the project</strong></p>
+    <p>04 - Summary</p>
+    <p>05 - Feedback</p>
+    </div>
 </div>
-----
+---
 <div class="grid-slide-container">
   <div class="grid-slide-header">
   <header class="slide_header">
@@ -743,7 +805,7 @@ mouseWheel: true,
   <div class="grid-slide-image" style="background-image: url(./img/apax_build_overview.svg); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
-----
+---
 <div class="grid-slide-container">
     <div class="grid-slide-header">
     <header class="slide_header">
@@ -779,7 +841,7 @@ mouseWheel: true,
   </div>
 </div>
 
-----
+---
 
 <div class="grid-slide-container">
     <div class="grid-slide-header">
@@ -810,7 +872,7 @@ mouseWheel: true,
   </div>
 </div>
 
-----
+---
 <div class="grid-slide-container">
   <div class="grid-slide-header">
     <header class="slide_header">
@@ -865,3 +927,6 @@ mouseWheel: true,
 <h1>SIMATIC AX</h1>
 <h2>learning path</h2>
 <h4><a href="https://github.com/simatic-ax/introduction_apax/issues/new/choose">I want to give feedback</a></h4>
+
+
+[def]: /
