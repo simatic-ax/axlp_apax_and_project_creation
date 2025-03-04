@@ -129,26 +129,6 @@ mouseWheel: true,
   </div>
 </div>
 ---
-
-<div class="grid-slide-2x1-container">
-  <div class="grid-slide-header">
-    <header class="slide_header">
-      <h2>Introduction to package management</h2>
-      <h3>2What is Apax?</h3>
-    </header>
-  </div>
-  <div class="kachel1">
-    <li>apax is the central tool within Simatic AX, acting as a package manager and a build tool</li>
-    <li>apax is a command line interface tool that serves as a package manager and facilitator for each step in the development workflow</li>
-    <li>it helps you create, build, and manage AX projects efficiently</li>
-    <div class="definition"><code>apax</code> automates the process of retrieving and managing project dependencies, making it easier to develop and maintain AX projects.</div>
-    <br>
-  </div>
-  <div class="kachel2">
-    <img src="img/apax_overview.svg" alt="Bild 2" style="width: 100%;">
-  </div>
-</div>
----
 <div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
     <header class="slide_header">
@@ -191,7 +171,7 @@ mouseWheel: true,
     </ul>
     <p>In the case of <strong>Apax</strong> the name of the configuration file is <code>apax.yml</code></p>
   </div>
-  <div class="kachel_with_border kachel2">
+  <div class="kachel2">
     <img src="./img/apax_yml.svg" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
@@ -215,9 +195,8 @@ mouseWheel: true,
   <p>Packages can be individually updated, which significantly simplifies the process of updating a library.</p>
   <p>The full package name then becomes something like <code>@ax/package-name</code>, helping in organizing and managing packages, especially when dealing with multiple registries.</p>
   </div>
-  <div class="kachel_with_border kachel2">
-    <img src="/img/apax_overview.svg" alt="Bild 1" style="width: 100%;">
-  </div>
+  <div class="kachel2">
+    <img src="img/apax_overview.svg" alt="Bild 2" style="width: 100%;">
   </div>
 </div>
 ---
@@ -266,7 +245,7 @@ mouseWheel: true,
     </ul>
     <div class="definition">dependencies are like ingredients in a recipe, while devDependencies are like the tools used to prepare the recipe.</div>
   </div>
-  <div class="kachel_with_border kachel2">
+  <div class="kachel2">
     <img src="/img/apax_overview.svg" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
@@ -287,9 +266,8 @@ mouseWheel: true,
     <li><strong>devDependencies:</strong> these are only needed during the development and testing phases but not for running the project. They are like the tools used to prepare the recipe, such as a mixer. For example, an SDK (Software Development Kit) is a devDependency because it is used to build and test the project but is not needed in the final application</li>
   </ul>
   </div>
-  <div class="kachel_with_border kachel2">
-    <img src="/img/apax_overview.svg" alt="Bild 1" style="width: 100%;">
-  </div>
+    <div class="kachel2">
+    <img src="img/apax_overview.svg" alt="Bild 2" style="width: 100%;">
   </div>
 </div>
 
@@ -310,9 +288,8 @@ mouseWheel: true,
     <li>a scope is a way to group related packages together, usually defined by a prefix, such as <code>@ax</code> for SIMATIC AX packages</li>
   </ul>
   </div>
-  <div class="kachel_with_border kachel2">
-    <img src="/img/apax_registries.svg" alt="Bild 1" style="width: 100%;">
-  </div>
+    <div class="kachel2">
+    <img src="img/apax_registries.svg" alt="Bild 2" style="width: 100%;">
   </div>
 </div>
 
@@ -351,9 +328,8 @@ mouseWheel: true,
     <li>install dependencies: <code>apax install</code></li>
   </ul>
   </div>
-  <div class="kachel2">
-    <img src="/img/apax_overview.svg" alt="Bild 1" style="width: 100%;">
-  </div>
+    <div class="kachel2">
+    <img src="img/apax_overview.svg" alt="Bild 2" style="width: 100%;">
   </div>
 </div>
 
@@ -372,10 +348,10 @@ mouseWheel: true,
   <br>
   <p>this command will display the current version of Apax installed on your system.</p>
   </text>
-  <div class="kachel2">
-    <img src="/img/apax_version.gif" alt="Bild 1" style="width: 100%;">
+    <div class="kachel2">
+    <img src="img/apax_version.gif" alt="Bild 2" style="width: 100%;">
   </div>
-
+  </div>
 
 </div>
 ---
