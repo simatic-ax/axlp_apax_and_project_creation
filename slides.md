@@ -13,12 +13,13 @@ mouseWheel: true,
 <h1>SIMATIC AX</h1>
 <h3>Get started with Apax and AX Projects</h3>
 ---
-<header class="slide_header">
-  <h2>Table of Contents</h2>
-</header>
-
-<div class="grid-two-col-eq">
-  <div class="flex-col justify-center">
+<div class="grid-slide-1x1-container">
+  <div class="grid-slide-header">
+    <header class="slide_header">
+      <h2>Table of Contents</h2>
+    </header>
+  </div>
+  <div class="kachel1">
     <p><strong>00 - Prerequisites</strong></p>
     <p>01 - Introduction to package management</p>
     <p>02 - Use Apax</p>
@@ -28,14 +29,13 @@ mouseWheel: true,
   </div>
 </div>
 ---
-<header class="slide_header">
-  <h2>
-        What will you learn in this chapter
-  </h2>
-</header>
-
-<div class="grid-two-col-eq">
-  <div class="flex-col justify-center">
+<div class="grid-slide-2x1-container">
+  <div class="grid-slide-header">
+    <header class="slide_header">
+      <h2> What will you learn in this chapter</h2>
+    </header>
+  </div>
+  <div class="kachel1">
     <p>After you completed this training section you will </p>
         <ul>
             <li>understand the basics of package management</li>
@@ -52,12 +52,13 @@ mouseWheel: true,
   </div>
 </div>
 ---
-<header class="slide_header">
-  <h2>Prerequisites</h2>
-</header>
-
-<div class="grid-two-col-eq">
-  <div class="flex-col justify-center">
+<div class="grid-slide-2x1-container">
+  <div class="grid-slide-header">
+    <header class="slide_header">
+      <h2>Prerequisites</h2>
+    </header>
+  </div>
+  <div class="kachel1">
     <li>to get started, you need to have SIMATIC AX, apax and all its prerequisites installed </li>
     <li>in addition, you should know the basics on how to use AX Code</li>
     <li>basic knowledge of using the command line interface (CLI) is also required This includes:</li>
@@ -71,7 +72,7 @@ mouseWheel: true,
   </div>
 </div>
 ---
-<div class="grid-slide-2x1-container">
+<div class="grid-slide-1x1-container">
   <div class="grid-slide-header">
     <header class="slide_header">
       <h2>Introduction to package management</h2>
@@ -294,7 +295,7 @@ mouseWheel: true,
 </div>
 
 ---
-<div class="grid-slide-2x1-container">
+<div class="grid-slide-1x1-container">
   <div class="grid-slide-header">
     <header class="slide_header">
       <h2>Use Apax</h2>
@@ -386,7 +387,7 @@ mouseWheel: true,
       <li>the advantage is that there are not only fixed project templates; every user can create their own project templates and store them in a registry to make them available</li>
     </ul>
   </div>
-  <div class="kachel_with_border kachel2">
+  <div class="kachel2">
     <img src="img/create_project.gif" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
@@ -407,7 +408,7 @@ mouseWheel: true,
       <li><strong>lib:</strong> this template is used to create a library project. A library project is intended to be published as a package and can be reused in applications or other libraries</li>
     </ul>
   </div>
-  <div class="kachel_with_border kachel2">
+  <div class="kachel2">
     <img src="img/create_project.gif" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
@@ -431,7 +432,7 @@ mouseWheel: true,
     </ul>
     <p>These templates can be used to streamline the project creation process and ensure that you have the necessary structure and dependencies in place from the start.</p>
   </div>
-  <div class="kachel_with_border kachel2">
+  <div class="kachel2">
     <img src="img/create_project.gif" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
@@ -456,7 +457,7 @@ mouseWheel: true,
       <li>apax create CLI reference: <br><a href="https://console.simatic-ax.siemens.io/docs/apax/cli#create">https://console.simatic-ax.siemens.io/docs/apax/cli#create</a></li>
     </ol>
 </div>
-  <div class="kachel_with_border kachel2">
+  <div class="kachel2">
     <img src="img/create_project.gif" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
@@ -478,7 +479,7 @@ mouseWheel: true,
     </ul>
     <p>This structure helps in organizing your project files and dependencies efficiently.</p>
   </div>
-  <div class="kachel_with_border kachel2">
+  <div class="kachel2">
     <img src="img/ax_project_structure.png" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
@@ -501,7 +502,7 @@ mouseWheel: true,
     </ol>
     <p>This will download a special package called template and uncompress it into a new folder under the selected directory.</p>
  </div>
-  <div class="kachel_with_border kachel2">
+  <div class="kachel2">
     <img src="img/apax_extension.png" alt="Bild 1" style="width: 100%;">
   </div>
     <p>Placeholder for an image showing apax extension</p>
@@ -536,7 +537,7 @@ mouseWheel: true,
       <li>apax.yml manifest reference: <br><a href="https://console.simatic-ax.siemens.io/docs/apax/yml">https://console.simatic-ax.siemens.io/docs/apax/yml</a></li>
     </ol>
 </div>
-  <div class="kachel_with_border kachel2">
+  <div class="kachel2">
     <img src="img/apaxyml.png" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
@@ -567,7 +568,7 @@ mouseWheel: true,
       <li>apax.yml field type: <br><a href="https://console.simatic-ax.siemens.io/docs/apax/yml#type">https://console.simatic-ax.siemens.io/docs/apax/yml#type</a></li>
     </ol>
 </div>
-  <div class="kachel_with_border kachel2">
+  <div class="kachel2">
     <img src="img/apaxyml.png" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
@@ -599,7 +600,7 @@ mouseWheel: true,
       </li>
     </ul>
   </div>
-  <div class="kachel_with_border kachel2">
+  <div class="kachel2">
     <img src="img/apaxyml.png" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
@@ -621,7 +622,7 @@ mouseWheel: true,
       <li>this flexibility ensures that you can always use the most suitable tools for your development needs</li>
     </ul>
   </div>
-  <div class="kachel_with_border kachel2">
+  <div class="kachel2">
     <img src="img/apaxyml.png" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
@@ -644,7 +645,7 @@ mouseWheel: true,
     </ul>
     <p>By defining the target, you ensure that the project is compiled and built for the correct platform, whether it's for deployment on a PLC or for running unit tests.</p>
   </div>
-  <div class="kachel_with_border kachel2">
+  <div class="kachel2">
     <img src="img/apaxyml.png" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
@@ -672,7 +673,7 @@ mouseWheel: true,
       <li>apax package management: <a href="https://console.simatic-ax.siemens.io/docs/apax/yml#package-management">https://console.simatic-ax.siemens.io/docs/apax/yml#package-management</a></li>
     </ol>
   </div>
-  <div class="kachel_with_border kachel2">
+  <div class="kachel2">
     <img src="img/apax_install.gif" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
@@ -880,13 +881,12 @@ mouseWheel: true,
   </div>
 </div>
 ---
-<header class="slide_header">
-  <h2>
-        What did you learn
-  </h2>
-</header>
-
 <div class="grid-slide-1x1-container">
+  <div class="grid-slide-header">
+    <header class="slide_header">
+      <h2>What did you learn</h2>
+    </header>
+  </div>
   <div class="kachel1">
     <p>In this section you learned about...</p>
     <ul>
@@ -907,6 +907,3 @@ mouseWheel: true,
 <h1>SIMATIC AX</h1>
 <h2>learning path</h2>
 <h4><a href="https://github.com/simatic-ax/introduction_apax/issues/new/choose">I want to give feedback</a></h4>
-
-
-[def]: /
