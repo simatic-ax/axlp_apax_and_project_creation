@@ -897,7 +897,7 @@ mouseWheel: true,
     </ul>
     <br>
     <p>you can now create your own project and continue with the next section</p>
-  </div>
+  </div>   
 </div>
 ---
 <!-- .slide: data-background="rgb(0,0,40)" -->

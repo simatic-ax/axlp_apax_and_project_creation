@@ -244,10 +244,10 @@ td {
   overflow: hidden;    
   column-gap: 2rem;
   row-gap: 20px;
-  grid-template-rows: 150px 1fr auto;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px fit-content(60%) auto;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "header header header"
+  "header header"
   "kachel1 kachel2"
   "kachel1 kachel3"
 }
