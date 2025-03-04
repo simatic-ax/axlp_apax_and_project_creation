@@ -13,45 +13,6 @@ mouseWheel: true,
 <h1>SIMATIC AX</h1>
 <h3>Get started with Apax and AX Projects</h3>
 ---
-<div class="grid-slide-2x2-container">
-  <div class="grid-slide-header">
-    <header class="slide_header">
-      <h2>0_Introduction to package management</h2>
-      <h3>Overview</h3>
-    </header>
-  </div>
-  <div class="kachel_with_border kachel1">
-    <p>Text in Kachel 1</p>
-  </div>
-  <div class="kachel_with_border kachel2">
-    <img src="img/apax_add.gif" alt="Bild 1" style="width: 100%;">
-  </div>
-  <div class="kachel3">
-    <p>Text in Kachel 3</p>
-  </div>
-  <div class="kachel_with_border kachel4">
-    <img src="img/apax_add.gif" alt="Bild 2" style="width: 100%;">
-  </div>
-</div>
----
-<div class="grid-slide-3x1-container">
-  <div class="grid-slide-header">
-    <header class="slide_header">
-      <h2>1_Introduction to package management</h2>
-      <h3>Overview</h3>
-    </header>
-  </div>
-  <div class="kachel_with_border kachel1">
-    <p>Text in Kachel 1</p>
-  </div>
-  <div class="kachel_with_border kachel2">
-    <img src="img/apax_add.gif" alt="Bild 1" style="width: 100%;">
-  </div>
-  <div class="kachel_with_border kachel3">
-    <img src="img/apax_add.gif" alt="Bild 2" style="width: 100%;">
-  </div>
-</div>
----
 <header class="slide_header">
   <h2>Table of Contents</h2>
 </header>
@@ -90,7 +51,6 @@ mouseWheel: true,
     <br>
   </div>
 </div>
-
 ---
 <header class="slide_header">
   <h2>Prerequisites</h2>
@@ -111,14 +71,14 @@ mouseWheel: true,
   </div>
 </div>
 ---
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
     <header class="slide_header">
       <h2>Introduction to package management</h2>
       <h3>Overview</h3>
     </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
     <p>00 - Prerequisites</p>
     <p><strong>01 - Introduction to package management</strong></p>
     <p>02 - Use Apax</p>
@@ -128,14 +88,14 @@ mouseWheel: true,
   </div>
 </div>
 ---
-<div class="grid-slide-container2">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
   <header class="slide_header">
   <h2>Introduction to package management</h2>
   <h3>Overview</h3>
   </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
   <p>In this chapter, you will learn about:</p>
   <ul>
     <li>what package management is and why it is important</li>
@@ -143,58 +103,82 @@ mouseWheel: true,
     <li>key concepts such as dependencies, registries, and packages</li>
   </ul>
   </div>
-  <div class="grid-slide-image" style="background-image: url(./img/apax_overview.svg); background-repeat: no-repeat">
+  <div class="kachel2">
+    <img src="img/apax_overview.svg" alt="Bild 2" style="width: 100%;">
   </div>
 </div>
 
 ---
 
-<div class="grid-slide-container">
-    <div class="grid-slide-header">
+<div class="grid-slide-2x1-container">
+  <div class="grid-slide-header">
     <header class="slide_header">
-    <h2>Introduction to package management</h2>
-    <h3>What is Apax?</h3>
+      <h2>Introduction to package management</h2>
+      <h3>What is Apax?</h3>
     </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
     <li>apax is the central tool within Simatic AX, acting as a package manager and a build tool</li>
     <li>apax is a command line interface tool that serves as a package manager and facilitator for each step in the development workflow</li>
     <li>it helps you create, build, and manage AX projects efficiently</li>
     <div class="definition"><code>apax</code> automates the process of retrieving and managing project dependencies, making it easier to develop and maintain AX projects.</div>
     <br>
   </div>
-  <div class="grid-slide-image" style="background-image: url(./img/apax_overview.svg); background-repeat: no-repeat">
+  <div class="kachel2">
+    <img src="img/apax_overview.svg" alt="Bild 2" style="width: 100%;">
   </div>
 </div>
-
 ---
-<div class="grid-slide-container">
+
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
-  <header class="slide_header">
-    <h2>Introduction to package management</h2>
-    <h3>What is a package manager?</h3>
-  </header>
+    <header class="slide_header">
+      <h2>Introduction to package management</h2>
+      <h3>2What is Apax?</h3>
+    </header>
   </div>
-  <div class="grid-slide-text">
-  <li>a package manager is a tool that automates the process of installing, updating, and managing software packages and their dependencies</li>
-  <br>
-  <li>it retrieves libraries and tools (packages) required for your project from central databases (registries) and downloads them to your PC</li>
-  <div class="definition">a package manager simplifies the process of managing software dependencies and ensures that your project has all the necessary components to run correctly.</div>
-  <p>common examples of package managers include npm for JavaScript, pip for Python, and apax for AX projects.</p>
+  <div class="kachel1">
+    <li>apax is the central tool within Simatic AX, acting as a package manager and a build tool</li>
+    <li>apax is a command line interface tool that serves as a package manager and facilitator for each step in the development workflow</li>
+    <li>it helps you create, build, and manage AX projects efficiently</li>
+    <div class="definition"><code>apax</code> automates the process of retrieving and managing project dependencies, making it easier to develop and maintain AX projects.</div>
+    <br>
   </div>
-  <div class="grid-slide-image" style="background-image: url(./img/apax_overview.svg); background-repeat: no-repeat; background-size: contain">
+  <div class="kachel2">
+    <img src="img/apax_overview.svg" alt="Bild 2" style="width: 100%;">
+  </div>
+</div>
+---
+<div class="grid-slide-2x1-container">
+  <div class="grid-slide-header">
+    <header class="slide_header">
+      <h2>Introduction to package management</h2>
+      <h3>What is a package manager?</h3>
+    </header>
+  </div>
+  <div class="kachel1">
+    <li>a package manager is a tool that automates the process of installing, updating, and managing software packages and their dependencies</li>
+    <br>
+    <li>it retrieves libraries and tools (packages) required for your project from central databases (registries) and downloads them to your PC</li>
+    <div class="definition">
+      a package manager simplifies the process of managing software dependencies and ensures that your project has all the necessary components to run correctly.
+    </div>
+    <p>common examples of package managers include npm for JavaScript, pip for Python, and apax for AX projects.</p>
+  </div>
+  <div class="kachel2">
+    <img src="img/apax_overview.svg" alt="Bild 2" style="width: 100%;">
   </div>
 </div>
 
 ---
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
     <header class="slide_header">
       <h2>Introduction to package management</h2>
       <h3>Configuration file for package manager</h3>
     </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
     <p>Typically a package manager requires a configuration file named. This file contains many entries that define:</p>
     <ul>
       <li>metadata</li>
@@ -207,19 +191,21 @@ mouseWheel: true,
     </ul>
     <p>In the case of <strong>Apax</strong> the name of the configuration file is <code>apax.yml</code></p>
   </div>
-  <div class="grid-slide-image" style="background-image: url(./img/apax_yml.svg); background-repeat: no-repeat; background-size: contain">
+  <div class="kachel_with_border kachel2">
+    <img src="./img/apax_yml.svg" alt="Bild 1" style="width: 100%;">
+  </div>
   </div>
 </div>
 ---
 
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
-  <header class="slide_header">
-    <h2>Introduction to package management</h2>
-    <h3>What is a package?</h3>
-  </header>
+    <header class="slide_header">
+      <h2>Introduction to package management</h2>
+      <h3>What is a package?</h3>
+    </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
   <p>A package is a bundle of code that provides specific functionality and can be easily shared and reused. It typically includes tools, compiled code, or source code. Examples of packages are:</p>
   <ul>
     <li>tools like the ST compiler (STC) or SIMATIC loader (SLD)</li>
@@ -229,18 +215,20 @@ mouseWheel: true,
   <p>Packages can be individually updated, which significantly simplifies the process of updating a library.</p>
   <p>The full package name then becomes something like <code>@ax/package-name</code>, helping in organizing and managing packages, especially when dealing with multiple registries.</p>
   </div>
-  <div class="grid-slide-image" style="background-image: url(./img/apax_overview.svg); background-repeat: no-repeat; background-size: contain">
+  <div class="kachel_with_border kachel2">
+    <img src="/img/apax_overview.svg" alt="Bild 1" style="width: 100%;">
+  </div>
   </div>
 </div>
 ---
-<div class="grid-slide-ressources">
+<div class="grid-slide-1x1-container">
   <div class="grid-slide-header">
     <header class="slide_header">
       <h2>Introduction to package management</h2>
       <h3>Understanding package versions</h3>
     </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
     <p>Packages in Apax use semantic versioning (semver): <code>MAJOR.MINOR.PATCH</code>.</p>
     <ul>
       <li><strong>MAJOR:</strong> incompatible changes (e.g., <code>1.0.0</code> to <code>2.0.0</code>)</li>
@@ -261,14 +249,14 @@ mouseWheel: true,
 </div>
 ---
 
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
     <div class="grid-slide-header">
     <header class="slide_header">
         <h2>Introduction to package management</h2>
         <h3>Understanding dependencies</h3>
     </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
     <p>Dependencies are external libraries or tools that your project needs to function correctly.</p>
     <br>
     <p>There are two types of dependencies:</p>
@@ -278,39 +266,43 @@ mouseWheel: true,
     </ul>
     <div class="definition">dependencies are like ingredients in a recipe, while devDependencies are like the tools used to prepare the recipe.</div>
   </div>
-  <div class="grid-slide-image" style="background-image: url(./img/apax_overview.svg); background-repeat: no-repeat; background-size: contain">
+  <div class="kachel_with_border kachel2">
+    <img src="/img/apax_overview.svg" alt="Bild 1" style="width: 100%;">
+  </div>
   </div>
 </div>
 
 ---
 
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
   <header class="slide_header">
     <h2>Introduction to package management</h2>
     <h3>Differences between dependencies and devDependencies</h3>
   </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
   <ul>
     <li><strong>dependencies:</strong> these are essential for the project to run. They are like the ingredients in a recipe that you need to make the final dish. For example, a system-timer library is a dependency because it is required for the application to function</li>
     <li><strong>devDependencies:</strong> these are only needed during the development and testing phases but not for running the project. They are like the tools used to prepare the recipe, such as a mixer. For example, an SDK (Software Development Kit) is a devDependency because it is used to build and test the project but is not needed in the final application</li>
   </ul>
   </div>
-  <div class="grid-slide-image" style="background-image: url(./img/apax_overview.svg); background-repeat: no-repeat; background-size: contain">
+  <div class="kachel_with_border kachel2">
+    <img src="/img/apax_overview.svg" alt="Bild 1" style="width: 100%;">
+  </div>
   </div>
 </div>
 
 ---
 
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
   <header class="slide_header">
     <h2>Introduction to package management</h3>
     <h3>What is a registry?</h3>
   </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
   <ul>
     <li>a registry is a central database where packages are stored and maintained. It acts as a repository from which package managers can retrieve the necessary packages. Registries can be public or private, and they help in managing and distributing packages efficiently</li>
     <li>for SIMATIC AX, the default registry does not need to be specified</li>
@@ -318,19 +310,21 @@ mouseWheel: true,
     <li>a scope is a way to group related packages together, usually defined by a prefix, such as <code>@ax</code> for SIMATIC AX packages</li>
   </ul>
   </div>
-  <div class="grid-slide-image" style="background-image: url(./img/apax_registries.svg); background-repeat: no-repeat; background-size: contain">
+  <div class="kachel_with_border kachel2">
+    <img src="/img/apax_registries.svg" alt="Bild 1" style="width: 100%;">
+  </div>
   </div>
 </div>
 
 ---
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
     <header class="slide_header">
       <h2>Use Apax</h2>
       <h3>Overview</h3>
     </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
     <p>00 - Prerequisites</p>
     <p>01 - Introduction to package management</p>
     <p><strong>02 - Use Apax</strong></p>
@@ -340,14 +334,14 @@ mouseWheel: true,
   </div>
 </div>
 ---
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
   <header class="slide_header">
     <h2>Use Apax</h2>
     <h3>Overview</h3>
   </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
   <p>In this section, you will learn about:</p>
   <ul>
     <li>verify Apax installation: <code>apax --version</code></li>
@@ -357,114 +351,102 @@ mouseWheel: true,
     <li>install dependencies: <code>apax install</code></li>
   </ul>
   </div>
-  <div class="grid-slide-image" style="background-image: url(./img/use_apax_overview.svg); background-repeat: no-repeat; background-size: contain">
+  <div class="kachel2">
+    <img src="/img/apax_overview.svg" alt="Bild 1" style="width: 100%;">
+  </div>
   </div>
 </div>
 
 ---
 
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
   <header class="slide_header">
     <h2>Use Apax</h2>
     <h3>First use of Apax</h3>
   </header>
   </div>
-  <text class="grid-slide-text">
+  <text class="kachel1">
   <p>To verify that Apax is installed correctly and to check its version, you can use the following command in your terminal:</p>
   <pre><code>apax --version</code></pre>
   <br>
   <p>this command will display the current version of Apax installed on your system.</p>
   </text>
-  <!-- <ressources class="grid-slide-ressources"> -->
-  <ressources class="grid-slide-ressources">
-    <image class="grid-slide-image">lksdj</image>
-  </ressources>
-  <!-- </ressources> -->
+  <div class="kachel2">
+    <img src="/img/apax_version.gif" alt="Bild 1" style="width: 100%;">
+  </div>
+
 
 </div>
 ---
-<div class="grid-slide-container">
-  <div class="grid-slide-header">´
-    <header class="slide_header">
-    <h2>Use Apax</h2>
-    <h3>First use of Apax</h3>
-  </header>
-  </div>
-  <div class="grid-slide-text">
-  <p>To verify that Apax is installed correctly and to check its version, you can use the following command in your terminal:</p>
-  </div>
-  <!-- <div class="grid-slide-image"><img src="img/apax_add.gif" alt="APAX Add"></div> -->
-<div class="grid-slide-image" style="background-image: url(./img/apax_login.gif); background-repeat: no-repeat; background-size: contain">
-  </div>
-  <!-- <div class="grid-slide-ressources">Irgendeine Ressource</div>
-  <div class="grid-slide-image"><img src="img/apax_yml.svg" alt="APAX YML"></div> -->
-</div>
-
-
----
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
     <header class="slide_header">
       <h2>Using Apax</h2>
       <h3>Logging into a registry</h3>
     </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
     <p>Before you can fetch packages from a registry, you need to log in. This is done using the <code>apax login</code> command. Since we are not using any external registries at this point, we will log in to the <code>@ax</code> registry.</p>
     <pre><code>apax login</code></pre>
     <p>This command will login for the <code>@ax</code> registry. Once logged in, you will be able to fetch and manage packages from this registry.</p>
   </div>
-  <div class="grid-slide-image" style="background-image: url(./img/apax_login.gif); background-repeat: no-repeat; background-size: contain">
+  <div class="kachel_with_border kachel2">
+    <img src="/img/apax_login.gif" alt="Bild 1" style="width: 100%;">
+  </div>
   </div>
 </div>
 ---
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
     <header class="slide_header">
       <h2>Using Apax</h2>
       <h3>Creating a project - project templates</h3>
     </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
     <ul>
       <li>with Apax, projects can be created based on so-called project templates</li>
       <li>each project template is essentially a package that is downloaded and unpacked as a new project using the command <code>apax create</code></li>
       <li>the advantage is that there are not only fixed project templates; every user can create their own project templates and store them in a registry to make them available</li>
     </ul>
   </div>
-  <div class="grid-slide-image" style="background-image: url(./img/create_project.gif); background-repeat: no-repeat; background-size: contain">
+  <div class="kachel_with_border kachel2">
+    <img src="/img/create_project.gif" alt="Bild 1" style="width: 100%;">
+  </div>
   </div>
 </div>
 
 ---
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
     <header class="slide_header">
       <h2>Using Apax</h2>
       <h3>Creating a project - important project templates</h3>
     </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
     <p>There are two main templates you can use with <code>apax create</code>:</p>
     <ul>
       <li><strong>app:</strong> this template is used to create an application project. An application project is designed to run on a real runtime environment, such as an S7-1500 PLC</li>
       <li><strong>lib:</strong> this template is used to create a library project. A library project is intended to be published as a package and can be reused in applications or other libraries</li>
     </ul>
   </div>
-  <div class="grid-slide-image" style="background-image: url(./img/create_project.gif); background-repeat: no-repeat; background-size: contain">
+  <div class="kachel_with_border kachel2">
+    <img src="/img/create_project.gif" alt="Bild 1" style="width: 100%;">
+  </div>
   </div>
 </div>
 
 ---
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
     <header class="slide_header">
       <h2>Using Apax</h2>
       <h3>Creating a project - further templates</h3>
     </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
     <p>In addition to the <strong>app</strong> and <strong>lib</strong> templates, Apax offers several other templates to help you get started with different types of projects:</p>
     <ul>
       <li><strong>empty</strong> a generic template for creating a minimal project setup</li>
@@ -474,18 +456,20 @@ mouseWheel: true,
     </ul>
     <p>These templates can be used to streamline the project creation process and ensure that you have the necessary structure and dependencies in place from the start.</p>
   </div>
-  <div class="grid-slide-image" style="background-image: url(./img/create_project.gif); background-repeat: no-repeat; background-size: contain">
+  <div class="kachel_with_border kachel2">
+    <img src="/img/create_project.gif" alt="Bild 1" style="width: 100%;">
+  </div>
   </div>
 </div>
 ---
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
     <header class="slide_header">
       <h2>Using Apax</h2>
       <h3>Creating a project - Apax create</h3>
     </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
     <p>The <code>apax create</code> command allows you to create a new project from a template. The syntax for this command is:</p>
     <pre><code>apax create [template] [project-name]</code></pre>
     <p>Here, <code>[template]</code> is the name of the template you want to use, and <code>[project-name]</code> is the name of the new project. There are several templates available, but the most important ones are <strong>app</strong> and <strong>lib</strong>.</p>
@@ -497,18 +481,20 @@ mouseWheel: true,
       <li>apax create CLI reference: <br><a href="https://console.simatic-ax.siemens.io/docs/apax/cli#create">https://console.simatic-ax.siemens.io/docs/apax/cli#create</a></li>
     </ol>
 </div>
-  <div class="grid-slide-image" style="background-image: url(./img/create_project.gif); background-repeat: no-repeat; background-size: contain">
+  <div class="kachel_with_border kachel2">
+    <img src="/img/create_project.gif" alt="Bild 1" style="width: 100%;">
+  </div>
   </div>
 </div>
 ---
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
     <header class="slide_header">
       <h2>Using Apax</h2>
       <h3>Creating a project - generated project structure</h3>
     </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
     <p>After creating the project and opening it in AxCode, you will see the following structure:</p>
     <ul>
       <li><strong>apax.yml:</strong> the project manifest file, which we will explore in the next slide</li>
@@ -517,19 +503,21 @@ mouseWheel: true,
     </ul>
     <p>This structure helps in organizing your project files and dependencies efficiently.</p>
   </div>
-  <div class="grid-slide-image" style="background-image: url(./img/ax_project_structure.png); background-repeat: no-repeat; background-size: contain">
+  <div class="kachel_with_border kachel2">
+    <img src="/img/ax_project_structure.png" alt="Bild 1" style="width: 100%;">
+  </div>
   </div>
 </div>
 
 <!-- ---
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
     <div class="grid-slide-header">
     <header class="slide_header">
         <h2>Create a new project</h2>
         <h3>Using the apax extension</h3>
     </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
     <p>To create a new project with the apax extension you can execute the following steps:</p>
     <ol>
         <li>1. open a new AX Code window in the navigation bar <code>File &rarr; New Window</code></li>
@@ -538,7 +526,9 @@ mouseWheel: true,
     </ol>
     <p>This will download a special package called template and uncompress it into a new folder under the selected directory.</p>
  </div>
-  <div class="grid-slide-image" style="background-image: url(./img/apax_extension.png); background-repeat: no-repeat; background-size: contain">
+  <div class="kachel_with_border kachel2">
+    <img src="/img/apax_extension.png" alt="Bild 1" style="width: 100%;">
+  </div>
     <p>Placeholder for an image showing apax extension</p>
   </div>
   <div class="grid-slide-ressources">
@@ -549,14 +539,14 @@ mouseWheel: true,
 </div> -->
 
 ---
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
   <header class="slide_header">
     <h2>Using Apax</h2>
     <h3>Creating a project - the apax.yml</h3>
   </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
   <p>When you open the project with AX Code, you will find an <code>apax.yml</code> file. This file is the project manifest and contains important information about the project, such as:</p>
   <ul>
     <li><strong>name:</strong> the name of the project</li>
@@ -571,20 +561,22 @@ mouseWheel: true,
       <li>apax.yml manifest reference: <br><a href="https://console.simatic-ax.siemens.io/docs/apax/yml">https://console.simatic-ax.siemens.io/docs/apax/yml</a></li>
     </ol>
 </div>
-  <div class="grid-slide-image" style="background-image: url(./img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
+  <div class="kachel_with_border kachel2">
+    <img src="/img/apaxyml.png" alt="Bild 1" style="width: 100%;">
+  </div>
   </div>
 </div>
 
 ---
 
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
     <header class="slide_header">
       <h2>Using Apax</h2>
       <h3>Creating a project - understanding the field: type</h3>
     </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
     <p>The <code>type</code> field in the <code>apax.yml</code> file defines the nature of the project. The possible values are:</p>
     <ul>
       <li><strong>app:</strong> an application that can be deployed to PLCs</li>
@@ -600,20 +592,22 @@ mouseWheel: true,
       <li>apax.yml field type: <br><a href="https://console.simatic-ax.siemens.io/docs/apax/yml#type">https://console.simatic-ax.siemens.io/docs/apax/yml#type</a></li>
     </ol>
 </div>
-  <div class="grid-slide-image" style="background-image: url(./img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
+  <div class="kachel_with_border kachel2">
+    <img src="/img/apaxyml.png" alt="Bild 1" style="width: 100%;">
+  </div>
   </div>
 </div>
 
 ---
 
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
       <header class="slide_header">
       <h2>Using Apax</h2>
       <h3>Creating a project - understanding type app and lib</h3>
     </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
     <p>Let's take a closer look at the <strong>app</strong> and <strong>lib</strong> types:</p>
     <ul>
       <li><strong>app:</strong>
@@ -630,18 +624,20 @@ mouseWheel: true,
       </li>
     </ul>
   </div>
-  <div class="grid-slide-image" style="background-image: url(./img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
+  <div class="kachel_with_border kachel2">
+    <img src="/img/apaxyml.png" alt="Bild 1" style="width: 100%;">
+  </div>
   </div>
 </div>
 ---
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
     <header class="slide_header">
       <h2>Using Apax</h2>
       <h3>Creating a project - understanding the field: devDependencies</h3>
     </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
     <p>The <code>devDependencies</code> field in the <code>apax.yml</code> file lists the tools and libraries required for developing and testing your project. By default, it includes the latest SDK (Software Development Kit).</p>
     <ul>
       <li>an SDK is a collection of tools necessary for developing, loading, and debugging PLC software</li>
@@ -650,20 +646,22 @@ mouseWheel: true,
       <li>this flexibility ensures that you can always use the most suitable tools for your development needs</li>
     </ul>
   </div>
-  <div class="grid-slide-image" style="background-image: url(./img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
+  <div class="kachel_with_border kachel2">
+    <img src="/img/apaxyml.png" alt="Bild 1" style="width: 100%;">
+  </div>
   </div>
 </div>
 
 ---
 
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
     <header class="slide_header">
       <h2>Using Apax</h2>
       <h3>Creating a project - understanding the field: targets</h3>
     </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
     <p>The <code>targets</code> field in the <code>apax.yml</code> file specifies the target platforms for your project. Currently, the possible values are <strong>1500</strong> and <strong>LLVM</strong>.</p>
     <ul>
       <li><strong>1500:</strong> this target is used for S7-1500 PLCs</li>
@@ -671,18 +669,20 @@ mouseWheel: true,
     </ul>
     <p>By defining the target, you ensure that the project is compiled and built for the correct platform, whether it's for deployment on a PLC or for running unit tests.</p>
   </div>
-  <div class="grid-slide-image" style="background-image: url(./img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
+  <div class="kachel_with_border kachel2">
+    <img src="/img/apaxyml.png" alt="Bild 1" style="width: 100%;">
+  </div>
   </div>
 </div>
 ---
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
     <header class="slide_header">
       <h2>Using Apax</h2>
       <h3>Installing dependencies</h3>
     </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
     <p>Before starting your project, install the dependencies with:</p>
     <pre><code>apax install</code></pre>
     <br>
@@ -697,19 +697,21 @@ mouseWheel: true,
       <li>apax package management: <a href="https://console.simatic-ax.siemens.io/docs/apax/yml#package-management">https://console.simatic-ax.siemens.io/docs/apax/yml#package-management</a></li>
     </ol>
   </div>
-  <div class="grid-slide-image" style="background-image: url(./img/apax_install.gif); background-repeat: no-repeat; background-size: contain">
+  <div class="kachel_with_border kachel2">
+    <img src="/img/apax_install.gif" alt="Bild 1" style="width: 100%;">
+  </div>
   </div>
 
 ---
 
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
     <header class="slide_header">
       <h2>Using Apax</h2>
       <h3>Adding dependencies</h3>
     </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
     <p>To add a new dependency to your project, you can use the <code>apax add</code> command. For example, to add the <code>@ax/system-timer</code> package, you would use the following command:</p>
     <pre><code>apax add @ax/system-timer</code></pre>
     <p>When you run this command, the following happens:</p>
@@ -721,7 +723,9 @@ mouseWheel: true,
       <li>the <code>apax-lock.json</code> file is updated to lock the version of the added package</li>
     </ul>
   </div>
-  <div class="grid-slide-image" style="background-image: url(./img/apax_add.gif); background-repeat: no-repeat; background-size: contain">
+  <div class="kachel_with_border kachel2">
+    <img src="/img/apax_add.gif" alt="Bild 1" style="width: 100%;">
+  </div>
   </div>
 </div>
 
@@ -729,21 +733,21 @@ mouseWheel: true,
 
 <!-- ---
 
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
     <div class="grid-slide-header">
     <header class="slide_header">
         <h2>Building the project</h2>
         <h3>Installing dependencies</h3>
     </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
     <p>To download these packages you have to execute the following command:</p>
     <pre><code>apax install</code></pre>
     <br>
     <p>This will collect all dependencies and devDependencies of the apax.yml and download them to the .apax folder.</p>
     <p>Additionally it will create an apax-lock.json file. This file will contain all packages that have been installed, when you check it you will see, that the SDK has a lot of sub-dependencies that it brings along.</p>
   </div>
-  <div class="grid-slide-image">
+  <div class="kachel2">
     <pre><code data-line-numbers data-trim data-noescape>
     "packages": {
       "@ax/hwc": {
@@ -770,14 +774,14 @@ mouseWheel: true,
   </div>
 </div> -->
 ---
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
     <header class="slide_header">
       <h2>Building the project</h2>
       <h3>Overview</h3>
     </header>
     </div>
-    <div class="grid-slide-text">
+    <div class="kachel1">
     <p>00 - Prerequisites</p>
     <p>01 - Introduction to package management</p>
     <p>02 - Use Apax</p>
@@ -787,14 +791,14 @@ mouseWheel: true,
     </div>
 </div>
 ---
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
   <header class="slide_header">
     <h2>Building the project</h2>
     <h3>Overview</h3>
   </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
   <p>In this section, you will learn about:</p>
   <ul>
     <li>how to build the project using Apax: <code>apax build</code></li>
@@ -802,18 +806,20 @@ mouseWheel: true,
     <li>where to find the generated binaries</li>
   </ul>
   </div>
-  <div class="grid-slide-image" style="background-image: url(./img/apax_build_overview.svg); background-repeat: no-repeat; background-size: contain">
+  <div class="kachel_with_border kachel2">
+    <img src="/img/apax_build_overview.svg" alt="Bild 1" style="width: 100%;">
+  </div>
   </div>
 </div>
 ---
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
     <div class="grid-slide-header">
     <header class="slide_header">
         <h2>Building the project</h2>
         <h3>Compiling the source code</h3>
     </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
     <p>Now that all packages have been installed, we can build the project using this command:</p>
     <pre><code>apax build</code></pre>
     <br>
@@ -821,7 +827,7 @@ mouseWheel: true,
     <br>
     <p>The compiler will check for any syntactical or semantical errors and abort the compilation if the code has errors.</p>
   </div>
-  <div class="grid-slide-image">
+  <div class="kachel2">
     <pre><code data-trim data-noescape data-line-numbers>
     > apax build  
    ✔ Package verification succeeded.
@@ -843,21 +849,21 @@ mouseWheel: true,
 
 ---
 
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
     <div class="grid-slide-header">
     <header class="slide_header">
         <h2>Building the project</h2>
         <h3>Compiling the source code</h3>
     </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
     <p>Now that you have compiled, you will be able to find the binary file in the respective target subfolder in the bin directory. You can define the target in the apax.yml manifest.</p>
     <br>
     <div class="warning">
       Note that you have to recompile every time you want to download changes, otherwise the old binary will be loaded.
     </div>
   </div>
-  <div class="grid-slide-image">
+  <div class="kachel2">
     <pre><code data-line-numbers = "5" data-trim data-noescape>
     > apax build  
    ✔ Package verification succeeded.
@@ -873,14 +879,14 @@ mouseWheel: true,
 </div>
 
 ---
-<div class="grid-slide-container">
+<div class="grid-slide-2x1-container">
   <div class="grid-slide-header">
     <header class="slide_header">
       <h2>Getting Started</h2>
       <h3>Complete Workflow</h3>
     </header>
   </div>
-  <div class="grid-slide-text">
+  <div class="kachel1">
     <p>For a detailed guide on the complete workflow from creating a project to downloading it onto a PLC, refer to the <strong>Getting Started</strong> guide.</p>
     <p>In the <strong>Getting Started</strong> guide, you will learn about:</p>
     <ul>
@@ -896,7 +902,9 @@ mouseWheel: true,
       <li>Getting Started: <br><a href="https://console.simatic-ax.siemens.io/docs/get-started/guides_overview">https://console.simatic-ax.siemens.io/docs/get-started/guides_overview</a></li>
     </ol>
   </div>
-  <div class="grid-slide-image" style="background-image: url(./img/getting_started_workflow.svg); background-repeat: no-repeat; background-size: contain">
+  <div class="kachel_with_border kachel2">
+    <img src="/img/getting_started_workflow.svg" alt="Bild 1" style="width: 100%;">
+  </div>
   </div>
 </div>
 ---
@@ -906,8 +914,8 @@ mouseWheel: true,
   </h2>
 </header>
 
-<div class="grid-two-col-foc-right">
-  <div class="flex-col justify-center">
+<div class="grid-slide-1x1-container">
+  <div class="kachel1">
     <p>In this section you learned about...</p>
     <ul>
       <li>what apax is</li>
