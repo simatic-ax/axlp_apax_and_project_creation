@@ -172,7 +172,7 @@ mouseWheel: true,
     <p>In the case of <strong>Apax</strong> the name of the configuration file is <code>apax.yml</code></p>
   </div>
   <div class="kachel2">
-    <img src="./img/apax_yml.svg" alt="Bild 1" style="width: 100%;">
+    <img src="img/apax_yml.svg" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
 </div>
@@ -246,7 +246,7 @@ mouseWheel: true,
     <div class="definition">dependencies are like ingredients in a recipe, while devDependencies are like the tools used to prepare the recipe.</div>
   </div>
   <div class="kachel2">
-    <img src="/img/apax_overview.svg" alt="Bild 1" style="width: 100%;">
+    <img src="img/apax_overview.svg" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
 </div>
@@ -367,9 +367,8 @@ mouseWheel: true,
     <pre><code>apax login</code></pre>
     <p>This command will login for the <code>@ax</code> registry. Once logged in, you will be able to fetch and manage packages from this registry.</p>
   </div>
-  <div class="kachel_with_border kachel2">
-    <img src="/img/apax_login.gif" alt="Bild 1" style="width: 100%;">
-  </div>
+    <div class="kachel2">
+    <img src="img/apax_login.gif" alt="Bild 2" style="width: 100%;">
   </div>
 </div>
 ---
@@ -388,7 +387,7 @@ mouseWheel: true,
     </ul>
   </div>
   <div class="kachel_with_border kachel2">
-    <img src="/img/create_project.gif" alt="Bild 1" style="width: 100%;">
+    <img src="img/create_project.gif" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
 </div>
@@ -409,7 +408,7 @@ mouseWheel: true,
     </ul>
   </div>
   <div class="kachel_with_border kachel2">
-    <img src="/img/create_project.gif" alt="Bild 1" style="width: 100%;">
+    <img src="img/create_project.gif" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
 </div>
@@ -433,7 +432,7 @@ mouseWheel: true,
     <p>These templates can be used to streamline the project creation process and ensure that you have the necessary structure and dependencies in place from the start.</p>
   </div>
   <div class="kachel_with_border kachel2">
-    <img src="/img/create_project.gif" alt="Bild 1" style="width: 100%;">
+    <img src="img/create_project.gif" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
 </div>
@@ -458,7 +457,7 @@ mouseWheel: true,
     </ol>
 </div>
   <div class="kachel_with_border kachel2">
-    <img src="/img/create_project.gif" alt="Bild 1" style="width: 100%;">
+    <img src="img/create_project.gif" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
 </div>
@@ -480,7 +479,7 @@ mouseWheel: true,
     <p>This structure helps in organizing your project files and dependencies efficiently.</p>
   </div>
   <div class="kachel_with_border kachel2">
-    <img src="/img/ax_project_structure.png" alt="Bild 1" style="width: 100%;">
+    <img src="img/ax_project_structure.png" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
 </div>
@@ -503,7 +502,7 @@ mouseWheel: true,
     <p>This will download a special package called template and uncompress it into a new folder under the selected directory.</p>
  </div>
   <div class="kachel_with_border kachel2">
-    <img src="/img/apax_extension.png" alt="Bild 1" style="width: 100%;">
+    <img src="img/apax_extension.png" alt="Bild 1" style="width: 100%;">
   </div>
     <p>Placeholder for an image showing apax extension</p>
   </div>
@@ -538,7 +537,7 @@ mouseWheel: true,
     </ol>
 </div>
   <div class="kachel_with_border kachel2">
-    <img src="/img/apaxyml.png" alt="Bild 1" style="width: 100%;">
+    <img src="img/apaxyml.png" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
 </div>
@@ -569,7 +568,7 @@ mouseWheel: true,
     </ol>
 </div>
   <div class="kachel_with_border kachel2">
-    <img src="/img/apaxyml.png" alt="Bild 1" style="width: 100%;">
+    <img src="img/apaxyml.png" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
 </div>
@@ -601,7 +600,7 @@ mouseWheel: true,
     </ul>
   </div>
   <div class="kachel_with_border kachel2">
-    <img src="/img/apaxyml.png" alt="Bild 1" style="width: 100%;">
+    <img src="img/apaxyml.png" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
 </div>
@@ -623,7 +622,7 @@ mouseWheel: true,
     </ul>
   </div>
   <div class="kachel_with_border kachel2">
-    <img src="/img/apaxyml.png" alt="Bild 1" style="width: 100%;">
+    <img src="img/apaxyml.png" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
 </div>
@@ -646,7 +645,7 @@ mouseWheel: true,
     <p>By defining the target, you ensure that the project is compiled and built for the correct platform, whether it's for deployment on a PLC or for running unit tests.</p>
   </div>
   <div class="kachel_with_border kachel2">
-    <img src="/img/apaxyml.png" alt="Bild 1" style="width: 100%;">
+    <img src="img/apaxyml.png" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
 </div>
@@ -674,7 +673,7 @@ mouseWheel: true,
     </ol>
   </div>
   <div class="kachel_with_border kachel2">
-    <img src="/img/apax_install.gif" alt="Bild 1" style="width: 100%;">
+    <img src="img/apax_install.gif" alt="Bild 1" style="width: 100%;">
   </div>
   </div>
 
@@ -699,9 +698,8 @@ mouseWheel: true,
       <li>the <code>apax-lock.json</code> file is updated to lock the version of the added package</li>
     </ul>
   </div>
-  <div class="kachel_with_border kachel2">
-    <img src="/img/apax_add.gif" alt="Bild 1" style="width: 100%;">
-  </div>
+  <div class="kachel2">
+    <img src="img/apax_add.gif" alt="Bild 1" style="width: 100%;">
   </div>
 </div>
 
@@ -782,9 +780,8 @@ mouseWheel: true,
     <li>where to find the generated binaries</li>
   </ul>
   </div>
-  <div class="kachel_with_border kachel2">
-    <img src="/img/apax_build_overview.svg" alt="Bild 1" style="width: 100%;">
-  </div>
+  <div class="kachel2">
+    <img src="img/apax_build_overview.svg" alt="Bild 1" style="width: 100%;">
   </div>
 </div>
 ---
@@ -878,9 +875,8 @@ mouseWheel: true,
       <li>Getting Started: <br><a href="https://console.simatic-ax.siemens.io/docs/get-started/guides_overview">https://console.simatic-ax.siemens.io/docs/get-started/guides_overview</a></li>
     </ol>
   </div>
-  <div class="kachel_with_border kachel2">
-    <img src="/img/getting_started_workflow.svg" alt="Bild 1" style="width: 100%;">
-  </div>
+  <div class="kachel2">
+    <img src="img/getting_started_workflow.svg" alt="Bild 1" style="width: 100%;">
   </div>
 </div>
 ---
