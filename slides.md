@@ -3,7 +3,7 @@ title: Get started with Apax and AX Projects
 progress: true
 revealOptions:
   transition: 'fade'
-mouseWheel: true,
+  mouseWheel: true
 
 ---
 <!-- .slide: data-background="rgb(0,0,40)" -->
@@ -59,16 +59,18 @@ mouseWheel: true,
     </header>
   </div>
   <div class="kachel1">
-    <li>to get started, you need to have SIMATIC AX, apax and all its prerequisites installed </li>
-    <li>in addition, you should know the basics on how to use AX Code</li>
-    <li>basic knowledge of using the command line interface (CLI) is also required This includes:</li>
     <ul>
-      <li>how to open a CLI</li>
-      <li>how to change directories</li>
-      <li>how to execute commands</li>
+      <li>to get started, you need to have SIMATIC AX, apax and all its prerequisites installed </li>
+      <li>in addition, you should know the basics on how to use AX Code</li>
+      <li>basic knowledge of using the command line interface (CLI) is also required. This includes:</li>
+      <ul>
+        <li>how to open a CLI</li>
+        <li>how to change directories</li>
+        <li>how to execute commands</li>
+      </ul>
+      <br/>
+      <li>with this, you are set up to continue with this learning path</li>
     </ul>
-    <br/>
-    <li>with this, you are set up to continue with this learning path</li>
   </div>
 </div>
 ---
@@ -119,8 +121,8 @@ mouseWheel: true,
     </header>
   </div>
   <div class="kachel1">
-    <li>apax is the central tool within Simatic AX, acting as a package manager and a build tool</li>
-    <li>apax is a command line interface tool that serves as a package manager and facilitator for each step in the development workflow</li>
+    <li>Apax is the central tool within Simatic AX, acting as a package manager and a build tool</li>
+    <li>Apax is a command line interface tool that serves as a package manager and facilitator for each step in the development workflow</li>
     <li>it helps you create, build, and manage AX projects efficiently</li>
     <div class="definition"><code>apax</code> automates the process of retrieving and managing project dependencies, making it easier to develop and maintain AX projects.</div>
     <br>
@@ -138,7 +140,7 @@ mouseWheel: true,
     </header>
   </div>
   <div class="kachel1">
-    <li>a package manager is a tool that automates the process of installing, updating, and managing software packages and their dependencies</li>
+    <li>A package manager is a tool that automates the process of installing, updating, and managing software packages and their dependencies</li>
     <br>
     <li>it retrieves libraries and tools (packages) required for your project from central databases (registries) and downloads them to your PC</li>
     <div class="definition">
@@ -160,7 +162,7 @@ mouseWheel: true,
     </header>
   </div>
   <div class="kachel1">
-    <p>Typically a package manager requires a configuration file named. This file contains many entries that define:</p>
+    <p>Typically a package manager requires a configuration file named <code>apax.yml</code>. This file contains many entries that define:</p>
     <ul>
       <li>metadata</li>
       <li>target systems</li>
@@ -220,7 +222,7 @@ mouseWheel: true,
       <li><code>@ax/system-timer@1.0.0</code> to <code>@ax/system-timer@2.0.0</code>: major update</li>
       <li><code>@ax/system-timer@1.0.0</code> to <code>@ax/system-timer@1.1.0</code>: minor update</li>
       <li><code>@ax/system-timer@1.0.0</code> to <code>@ax/system-timer@1.0.1</code>: patch update</li>
-    <p>the caret symbol <code>^</code> in version (e.g., <code>^1.0.0</code>) allows updates that do not change the first non-zero digit (e.g., <code>1.x.x</code>). Example <code>apax.yml</code> configuration:
+    <p>The caret symbol <code>^</code> in version (e.g., <code>^1.0.0</code>) allows updates that do not change the first non-zero digit (e.g., <code>1.x.x</code>). Example <code>apax.yml</code> configuration:
     <pre><code>
     dependencies:
       "@ax/system-timer": ^1.0.0
@@ -263,7 +265,7 @@ mouseWheel: true,
   </div>
   <div class="kachel1">
   <ul>
-    <li><strong>dependencies:</strong> these are essential for the project to run. They are like the ingredients in a recipe that you need to make the final dish. For example, a system-timer library is a dependency because it is required for the application to function</li>
+    <li><strong>Dependencies:</strong> these are essential for the project to run. They are like the ingredients in a recipe that you need to make the final dish. For example, a system-timer library is a dependency because it is required for the application to function</li>
     <li><strong>devDependencies:</strong> these are only needed during the development and testing phases but not for running the project. They are like the tools used to prepare the recipe, such as a mixer. For example, an SDK (Software Development Kit) is a devDependency because it is used to build and test the project but is not needed in the final application</li>
   </ul>
   </div>
@@ -283,7 +285,7 @@ mouseWheel: true,
   </div>
   <div class="kachel1">
   <ul>
-    <li>a registry is a central database where packages are stored and maintained. It acts as a repository from which package managers can retrieve the necessary packages. Registries can be public or private, and they help in managing and distributing packages efficiently</li>
+    <li>A registry is a central database where packages are stored and maintained. It acts as a repository from which package managers can retrieve the necessary packages. Registries can be public or private, and they help in managing and distributing packages efficiently</li>
     <li>for SIMATIC AX, the default registry does not need to be specified</li>
     <li>if you want to fetch packages from other registries like GitHub or NPM, you need to configure apax to recognize these registries</li>
     <li>a scope is a way to group related packages together, usually defined by a prefix, such as <code>@ax</code> for SIMATIC AX packages</li>
@@ -782,7 +784,7 @@ mouseWheel: true,
   </ul>
   </div>
   <div class="kachel2">
-    <img src="img/apax_install.gif" alt="Bild 1" style="width: 100%;">
+    <img src="img/apaxbuild.gif" alt="Bild 1" style="width: 100%;">
   </div>
 </div>
 ---
@@ -834,7 +836,7 @@ mouseWheel: true,
     <p>Now that you have compiled, you will be able to find the binary file in the respective target subfolder in the bin directory. You can define the target in the apax.yml manifest.</p>
     <br>
     <div class="warning">
-      Note that you have to recompile every time you want to download changes, otherwise the old binary will be loaded.
+      ><strong>Note:</strong> You have to recompile every time you want to download changes, otherwise the old binary will be loaded.
     </div>
   </div>
   <div class="kachel2">
@@ -875,9 +877,6 @@ mouseWheel: true,
     <ol>
       <li>Getting Started: <br><a href="https://console.simatic-ax.siemens.io/docs/get-started/guides_overview">https://console.simatic-ax.siemens.io/docs/get-started/guides_overview</a></li>
     </ol>
-  </div>
-  <div class="kachel2">
-    <img src="img/apax_add.gif" alt="Bild 1" style="width: 100%;">
   </div>
 </div>
 ---
