@@ -179,6 +179,21 @@ td {
   grid-column-gap: 4rem;
 }
 
+.grid-slide-2x2-container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;    
+  column-gap: 2rem;
+  row-gap: 20px;
+  grid-template-rows: 100px 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "header header"
+  "kachel1 kachel2"
+  "kachel3 kachel4";
+}
+
 .grid-slide-container {
   display: grid;
   width: 100%;
@@ -186,7 +201,7 @@ td {
   overflow: hidden;    
   column-gap: 2rem;
   row-gap: 20px;
-  grid-template-rows: 150px fit-content(60%) auto;
+  grid-template-rows: 100px fit-content(60%) auto;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
     "header header"
@@ -418,4 +433,38 @@ Tabular data
 table {
 	text-indent: 0; /* 1 */
 	border-color: inherit; /* 2 */
+}
+
+
+
+
+.kachel_with_border {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  border: 1px solid #000000; /* Hier wird der Rahmen hinzugefügt */
+}
+
+.kachel1 {
+  grid-area: kachel1;
+}
+
+.kachel2 {
+  grid-area: kachel2;
+}
+
+.kachel3 {
+  grid-area: kachel3;
+}
+
+.kachel4 {
+  grid-area: kachel4;
+}
+
+.kachel:hover {
+  background-color: #ddd; /* Helle Farbe beim Hovern */
 }
