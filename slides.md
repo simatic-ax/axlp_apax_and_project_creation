@@ -781,7 +781,7 @@ mouseWheel: true,
   </ul>
   </div>
   <div class="kachel2">
-    <img src="img/apax_build_overview.svg" alt="Bild 1" style="width: 100%;">
+    <img src="img/apax_install.gif" alt="Bild 1" style="width: 100%;">
   </div>
 </div>
 ---
@@ -876,7 +876,7 @@ mouseWheel: true,
     </ol>
   </div>
   <div class="kachel2">
-    <img src="img/getting_started_workflow.svg" alt="Bild 1" style="width: 100%;">
+    <img src="img/apax_add.gif" alt="Bild 1" style="width: 100%;">
   </div>
 </div>
 ---
