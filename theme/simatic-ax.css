@@ -179,6 +179,20 @@ td {
   grid-column-gap: 4rem;
 }
 
+.grid-slide-1x1-container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;    
+  column-gap: 2rem;
+  row-gap: 20px;
+  grid-template-rows: 150px 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "header"
+  "kachel1";
+}
+
 .grid-slide-2x2-container {
   display: grid;
   width: 100%;
@@ -186,7 +200,7 @@ td {
   overflow: hidden;    
   column-gap: 2rem;
   row-gap: 20px;
-  grid-template-rows: 100px 1fr 1fr auto;
+  grid-template-rows: 150px 1fr 1fr auto;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
   "header header"
@@ -202,7 +216,7 @@ td {
   overflow: hidden;    
   column-gap: 2rem;
   row-gap: 20px;
-  grid-template-rows: 100px 1fr auto;
+  grid-template-rows: 150px 1fr auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
   "header header header"
@@ -216,7 +230,7 @@ td {
   overflow: hidden;    
   column-gap: 2rem;
   row-gap: 20px;
-  grid-template-rows: 100px 1fr auto;
+  grid-template-rows: 150px 1fr auto;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
   "header header"
@@ -230,7 +244,7 @@ td {
   overflow: hidden;    
   column-gap: 2rem;
   row-gap: 20px;
-  grid-template-rows: 100px 1fr auto;
+  grid-template-rows: 150px 1fr auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
   "header header header"
