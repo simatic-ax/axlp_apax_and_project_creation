@@ -906,3 +906,7 @@ revealOptions:
 <h1>SIMATIC AX</h1>
 <h2>learning path</h2>
 <h4><a href="https://github.com/simatic-ax/introduction_apax/issues/new/choose">I want to give feedback</a></h4>
+<br>
+<h4><a href="https://github.com/simatic-ax/axlp_apax_and_project_creation">I want to contribute</a></h4>
+
+
