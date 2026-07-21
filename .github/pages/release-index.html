@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Released Versions</title>
+  <link rel="stylesheet" href="assets/release-index.css" />
+</head>
+<body>
+  <main class="page">
+    <h1>Learning path for:<br /><span class="heading-description">__DESCRIPTION__</span></h1>
+    <p class="subtitle">Released Versions</p>
+
+    <div class="actions">
+      <label for="version-select">Version:</label>
+      <select id="version-select"></select>
+      <button id="open-version" type="button">Open</button>
+    </div>
+
+    <h2>All Releases</h2>
+    <ul id="version-list"></ul>
+  </main>
+
+  <script>
+    const releases = __RELEASES__;
+    const releaseDetails = __RELEASE_DETAILS__;
+    const repo = '__REPO__';
+    const select = document.getElementById('version-select');
+    const list = document.getElementById('version-list');
+    const openButton = document.getElementById('open-version');
+    const detailsByTag = new Map(releaseDetails.map((entry) => [entry.tag, entry]));
+
+    function getShortNotes(text) {
+      const normalized = (text || '').trim();
+      if (!normalized) {
+        return 'No changelog details available for this release.';
+      }
+      const lines = normalized.split('\n');
+      const shortened = lines.slice(0, 8).join('\n');
+      return lines.length > 8 ? `${shortened}\n...` : shortened;
+    }
+
+    for (const version of releases) {
+      const option = document.createElement('option');
+      option.value = version;
+      option.textContent = version;
+      select.appendChild(option);
+
+      const li = document.createElement('li');
+      li.className = 'release-item';
+
+      const a = document.createElement('a');
+      a.href = `/${repo}/${version}/`;
+      a.textContent = version;
+      a.className = 'release-link';
+      li.appendChild(a);
+
+      const details = detailsByTag.get(version);
+
+      const meta = document.createElement('p');
+      meta.className = 'release-meta';
+      if (details && details.publishedAt) {
+        const published = new Date(details.publishedAt).toLocaleDateString('en-CA');
+        meta.textContent = `Published: ${published}`;
+      } else {
+        meta.textContent = 'Published: n/a';
+      }
+      li.appendChild(meta);
+
+      const notes = document.createElement('pre');
+      notes.className = 'release-notes';
+      notes.textContent = getShortNotes(details ? details.body : '');
+      li.appendChild(notes);
+
+      const fullNotes = document.createElement('a');
+      fullNotes.className = 'release-notes-link';
+      fullNotes.href = details && details.url ? details.url : `https://github.com/${repo}/releases/tag/${version}`;
+      fullNotes.textContent = 'View full release notes';
+      fullNotes.target = '_blank';
+      fullNotes.rel = 'noopener noreferrer';
+      li.appendChild(fullNotes);
+
+      list.appendChild(li);
+    }
+
+    openButton.addEventListener('click', () => {
+      if (!select.value) {
+        return;
+      }
+      window.location.href = `/${repo}/${select.value}/`;
+    });
+  </script>
+</body>
+</html>

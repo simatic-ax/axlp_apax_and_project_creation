@@ -1,0 +1,227 @@
+name: Deploy Reveal Release To GitHub Pages
+
+on:
+  release:
+    types:
+      - published
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: deploy-release-pages-${{ github.repository }}
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout published release tag
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.release.tag_name }}
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Derive release and repository metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "RELEASE_VERSION=${{ github.event.release.tag_name }}" >> "$GITHUB_ENV"
+          echo "BASE_PATH=/${{ github.event.repository.name }}/${{ github.event.release.tag_name }}/" >> "$GITHUB_ENV"
+
+      - name: Install reveal-md
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm install -g reveal-md
+
+      - name: Generate slides with reveal-md into the docs folder
+        shell: bash
+        env:
+          BASE_PATH: ${{ env.BASE_PATH }}
+        run: |
+          set -euo pipefail
+
+          cp slides.md slides.md.bak
+          sed -i "s|<h4>Version 0.0.0-placeholder</h4>|<h4>Version ${RELEASE_VERSION}</h4>|g" slides.md
+          reveal-md slides.md --static docs --theme theme/simatic-ax.css -css theme/simatic-ax.css --assets-dir dist --staticDirs img
+          mv slides.md.bak slides.md
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Prepare release artifact structure
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+
+          OUTPUT_DIR="$RUNNER_TEMP/pages-site"
+          RELEASE_DIR="$OUTPUT_DIR/$RELEASE_VERSION"
+          LATEST_DIR="$OUTPUT_DIR/latest"
+          WORKTREE_BASE="$RUNNER_TEMP/release-worktrees"
+          REPOSITORY_NAME="${{ github.event.repository.name }}"
+
+          mkdir -p "$RELEASE_DIR" "$LATEST_DIR" "$WORKTREE_BASE"
+
+          # Current release is already built in docs/.
+          cp -a docs/. "$RELEASE_DIR/"
+          cp -a docs/. "$LATEST_DIR/"
+
+          # Build additional released versions from tags so the index can navigate all versions.
+          git fetch --force --tags
+          mapfile -t VERSIONS < <(git tag --list 'v*' | sort -rV)
+
+          # Ensure the currently published release is part of the index list.
+          if [[ ! " ${VERSIONS[*]} " =~ " ${RELEASE_VERSION} " ]]; then
+            VERSIONS=("$RELEASE_VERSION" "${VERSIONS[@]}")
+          fi
+
+          for version in "${VERSIONS[@]}"; do
+            if [ "$version" = "$RELEASE_VERSION" ]; then
+              continue
+            fi
+
+            VERSION_DIR="$OUTPUT_DIR/$version"
+            if [ -d "$VERSION_DIR" ]; then
+              continue
+            fi
+
+            TAG_WORKTREE="$WORKTREE_BASE/$version"
+            git worktree add --detach "$TAG_WORKTREE" "refs/tags/$version"
+            (
+              cd "$TAG_WORKTREE"
+              cp slides.md slides.md.bak
+              sed -i "s|<h4>Version 0.0.0-placeholder</h4>|<h4>Version ${version}</h4>|g" slides.md
+              BASE_PATH="/$REPOSITORY_NAME/$version/" \
+                reveal-md slides.md --static "$VERSION_DIR" --theme theme/simatic-ax.css -css theme/simatic-ax.css --assets-dir dist --staticDirs img
+              mv slides.md.bak slides.md
+            )
+            git worktree remove "$TAG_WORKTREE" --force
+          done
+
+          # Generate index page from repo-local template.
+          cp .github/pages/release-index.html "$OUTPUT_DIR/index.html"
+
+          mkdir -p "$OUTPUT_DIR/assets"
+          cp .github/pages/release-index.css "$OUTPUT_DIR/assets/release-index.css"
+
+          RELEASES_JSON='['
+          for i in "${!VERSIONS[@]}"; do
+            version="${VERSIONS[$i]}"
+            if [ "$i" -gt 0 ]; then
+              RELEASES_JSON+=','
+            fi
+            RELEASES_JSON+="\"$version\""
+          done
+          RELEASES_JSON+=']'
+
+          APAX_DESCRIPTION="$(sed -nE 's/^[[:space:]]*description:[[:space:]]*"?([^"#]+)"?[[:space:]]*$/\1/p' apax.yml | head -n1)"
+          if [ -z "$APAX_DESCRIPTION" ]; then
+            APAX_DESCRIPTION="Introduction to ST Programming"
+          fi
+
+          RELEASE_DETAILS_FILE="$RUNNER_TEMP/release-details.json"
+          RELEASES_JSON="$RELEASES_JSON" GH_TOKEN="$GH_TOKEN" GH_REPOSITORY="$GH_REPOSITORY" node <<'NODE' > "$RELEASE_DETAILS_FILE"
+          const releases = JSON.parse(process.env.RELEASES_JSON || '[]');
+          const token = process.env.GH_TOKEN;
+          const repo = process.env.GH_REPOSITORY;
+
+          async function fetchReleaseByTag(tag) {
+            const headers = {
+              Accept: 'application/vnd.github+json',
+              'User-Agent': 'release-pages-workflow'
+            };
+            if (token) {
+              headers.Authorization = `Bearer ${token}`;
+            }
+
+            const endpoint = `https://api.github.com/repos/${repo}/releases/tags/${encodeURIComponent(tag)}`;
+            try {
+              const response = await fetch(endpoint, { headers });
+              if (!response.ok) {
+                return {
+                  tag,
+                  publishedAt: '',
+                  url: `https://github.com/${repo}/releases/tag/${encodeURIComponent(tag)}`,
+                  body: ''
+                };
+              }
+
+              const payload = await response.json();
+              return {
+                tag,
+                publishedAt: payload.published_at || '',
+                url: payload.html_url || `https://github.com/${repo}/releases/tag/${encodeURIComponent(tag)}`,
+                body: payload.body || ''
+              };
+            } catch {
+              return {
+                tag,
+                publishedAt: '',
+                url: `https://github.com/${repo}/releases/tag/${encodeURIComponent(tag)}`,
+                body: ''
+              };
+            }
+          }
+
+          (async () => {
+            const details = [];
+            for (const tag of releases) {
+              details.push(await fetchReleaseByTag(tag));
+            }
+            process.stdout.write(JSON.stringify(details));
+          })();
+          NODE
+          RELEASE_DETAILS_JSON="$(cat "$RELEASE_DETAILS_FILE")"
+
+          # Ensure deployed root index references the copied CSS asset.
+          sed -i 's|href="simatic-ax.css"|href="assets/release-index.css"|g' "$OUTPUT_DIR/index.html"
+          sed -i 's|href="theme/simatic-ax.css"|href="assets/release-index.css"|g' "$OUTPUT_DIR/index.html"
+          RELEASES_JSON="$RELEASES_JSON" RELEASE_DETAILS_JSON="$RELEASE_DETAILS_JSON" APAX_DESCRIPTION="$APAX_DESCRIPTION" REPOSITORY_NAME="$REPOSITORY_NAME" OUTPUT_INDEX="$OUTPUT_DIR/index.html" node <<'NODE'
+          const fs = require('fs');
+
+          function escapeHtml(value) {
+            return String(value)
+              .replace(/&/g, '&amp;')
+              .replace(/</g, '&lt;')
+              .replace(/>/g, '&gt;')
+              .replace(/"/g, '&quot;')
+              .replace(/'/g, '&#39;');
+          }
+
+          const outputPath = process.env.OUTPUT_INDEX;
+          const repositoryName = process.env.REPOSITORY_NAME;
+          const releaseListJson = process.env.RELEASES_JSON;
+          const releaseDetailsJson = process.env.RELEASE_DETAILS_JSON;
+          const description = escapeHtml(process.env.APAX_DESCRIPTION || '');
+
+          let html = fs.readFileSync(outputPath, 'utf8');
+          html = html.replace(/__REPO__/g, repositoryName);
+          html = html.replace(/__RELEASES__/g, releaseListJson);
+          html = html.replace(/__RELEASE_DETAILS__/g, releaseDetailsJson);
+          html = html.replace(/__DESCRIPTION__/g, description);
+          fs.writeFileSync(outputPath, html);
+          NODE
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ runner.temp }}/pages-site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

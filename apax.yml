@@ -1,5 +1,7 @@
 name: ax-learning-path-apax-and-projects
 version: 0.0.0
 type: generic
+description: SIMATIC AX learning path - SIMATIC AX - APAX and Project Creation
+author: SIEMENS AG
 scripts:
     present: reveal-md slides.md --watch --theme theme/simatic-ax.css -css theme/simatic-ax.css
