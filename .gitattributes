@@ -1,0 +1,2 @@
+﻿# `.gitattributes` ignore linguist when `.st` files available to avoid smalltalk as recognized lagnuage
+** linguist-vendored
