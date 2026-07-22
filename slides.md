@@ -12,6 +12,8 @@ revealOptions:
 <h2>Learning path</h2>
 <h1>SIMATIC AX</h1>
 <h3>Get started with Apax and AX Projects</h3>
+<div style="height: 0.6em;"></div>
+<h4>Version 0.0.0-placeholder</h4>
 ---
 <div class="grid-slide-1x1-container">
   <div class="grid-slide-header">
