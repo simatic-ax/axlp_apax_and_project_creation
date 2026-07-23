@@ -1,5 +1,5 @@
-name: ax-learning-path-apax-and-projects
-version: 0.0.0
+name: @simatic-ax/ax-learning-path-apax-and-projects
+version: 0.0.0-placeholder
 type: generic
 description: SIMATIC AX learning path - SIMATIC AX - APAX and Project Creation
 author: SIEMENS AG
