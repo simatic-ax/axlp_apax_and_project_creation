@@ -1,0 +1,12 @@
+{
+  "name": "ax-learning-path-apax-and-projects",
+  "version": "0.0.0",
+  "lockFileVersion": "2",
+  "installStrategy": "strict",
+  "root": {
+    "name": "ax-learning-path-apax-and-projects",
+    "version": "0.0.0"
+  },
+  "packages": {},
+  "workspaces": {}
+}
